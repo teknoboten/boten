@@ -1,0 +1,52 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --ltpink: #dec7d2;
+  --pink: #
+}
+
+body {
+  background-color: var(--white);
+}
+/* fonts  */
+/* font-family: 'Space Mono', monospace; */
+/* font-family: 'Fira Code', monospace;
+  font-family: 'Sofia', cursive; */
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vh;
+  padding-bottom: 50px;
+}
+
+.App a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Fira Code', monospace;
+  font-size: 4rem;
+  color: var(--ltpink);
+}
+
+.section {
+  width: 80vw;
+  margin: 20px auto;
+  padding: 10px 20px 20px;
+  /* border: 2px solid pink; */
+}
+  
+/* 
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--blue);
+  transform-origin: 0%;
+} */
