@@ -86,4 +86,8 @@ const recentProjects = [squamishGreenlaw, tripster, decisionWizard]
 const education = [lightHouseLabs, winnipegTech, uOfW]
 const employment = [odns, peer1, wardrop]
 
+//writing
+//support.opendns.com/hc/en-us/articles/227987647-EDNS-Client-Subnet-FAQ
+//https://umbrella.cisco.com/blog/a-love-letter-to-early-adopters
+
 export { summary, recentProjects, education, skills, employment }

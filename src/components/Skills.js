@@ -1,4 +1,5 @@
 import React from 'react'
+import { skills } from '../rzm.js'
 
 export default function Skills() {
     return (
