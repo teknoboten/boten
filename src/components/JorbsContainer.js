@@ -4,12 +4,12 @@ import { employment } from '../rzm.js'
 import Jorb from './Jorb.js'
 
 export default function JorbsContainer() {
-    const [showJorbs, setShowJorbs] = useState()
+    const [showJorbs, setShowJorbs] = useState(false)
     const toggleJorbs = () => setShowJorbs(!showJorbs)
 
     return (
         <div onClick={toggleJorbs} className="section">
-            <h1>Employment History</h1>
+            <h2>Employment History</h2>
 
             {showJorbs &&
                 employment.map((jorb) => (

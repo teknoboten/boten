@@ -5,12 +5,11 @@ import Project from './Project.js'
 
 export default function ProjectsContainer() {
     const [showProjects, setShowProjects] = useState(false)
-
     const toggleProjects = () => setShowProjects(!showProjects)
 
     return (
         <div onClick={toggleProjects} className="section">
-            <h1>Recent Projects</h1>
+            <h2>Recent Projects</h2>
 
             {showProjects &&
                 recentProjects.map((project) => (

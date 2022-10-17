@@ -7,7 +7,7 @@ export default function SkillsContainer() {
 
     return (
         <div onClick={toggleSkills} className="section">
-            <h1>Technical Skills</h1>
+            <h2>Technical Skills</h2>
 
             {showSkills && <Skills />}
         </div>

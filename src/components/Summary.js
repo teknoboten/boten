@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { summary } from '../rzm'
+import Project from './Project.js'
 
 export default function Summary() {
     const [showSummary, setShowSummary] = useState(false)
@@ -7,7 +8,7 @@ export default function Summary() {
 
     return (
         <div onClick={toggleSummary} className="section">
-            <h1>Summary</h1>
+            <h2>Summary</h2>
 
             {showSummary &&
                 summary.map((p, index) => <p key={index + 1}>{p}</p>)}
