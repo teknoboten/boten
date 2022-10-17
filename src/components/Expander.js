@@ -5,12 +5,23 @@ import ProjectsContainer from './ProjectsContainer'
 import SkillsContainer from './SkillsContainer'
 import JorbsContainer from './JorbsContainer'
 
+const classNames = require('classnames');
+
+
 function Expander({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
 
+    const expanderClass = classNames({
+        expander: true,
+        'isOpen': isOpen
+    });
+
     return (
+
+
+
         <motion.div
-            className="expander"
+            className={expanderClass}
             layout
             onClick={() => setIsOpen(!isOpen)}
         >
@@ -27,6 +38,3 @@ function Expander({ title, content }) {
 
 export default Expander
 
-{
-    /* {isOpen ? content : null} */
-}

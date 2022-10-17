@@ -32,7 +32,6 @@ h1 {
 
 h2 {
   font-size: 48rem;
-  
 }
 
 
@@ -49,12 +48,13 @@ h2 {
 
 
 .section {
-  background-color: #FBFF12;
+  /* background-color: #FBFF12; */
+  border: 2px solid lime;
 }
 
 .section h2 {
   font-family: 'Fira Code', monospace;
-  color: var(--taupe);
+  /* color: var(--taupe); */
   margin: 0px;
 }
 
@@ -66,10 +66,29 @@ h2 {
 
 
 .expander {
-  background-color: #FF70E2;
+  background-color: var(--silk);
+  width: 30vw;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .expander {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .expander {
+    width: 30vw;
+  }
 }
 
 
+
+.isOpen {
+  width: 80vw;
+  background-color: #FBFF12;
+}
 
 
 
