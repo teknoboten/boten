@@ -8,10 +8,10 @@ export default function ProjectsContainer() {
     const toggleProjects = () => setShowProjects(!showProjects)
 
     return (
-        <div onClick={toggleProjects} className="section">
-            <h2>Recent Projects</h2>
+        <div>
+            <p>projects go here</p>
 
-            {showProjects &&
+            {/* {showProjects &&
                 recentProjects.map((project) => (
                     <Project
                         key={project.title}
@@ -19,7 +19,7 @@ export default function ProjectsContainer() {
                         description={project.description}
                         url={project.url}
                     />
-                ))}
+                ))} */}
         </div>
     )
 }

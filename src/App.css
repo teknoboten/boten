@@ -1,7 +1,9 @@
 :root {
-  --blue: #1e90ff;
-  --white: #ffffff;
-  --ltpink: #dec7d2;
+  --black: #0C0F0A;
+  --taupe: #815E5B;
+  --pink: #FF70E2;
+  --lemon: #FBFF12;
+  --silk: #FFE5D9;
 }
 
 html {
@@ -25,13 +27,13 @@ a {
 h1 {
   font-family: 'Fira Code', monospace;
   font-size: 96rem;
-  color: var(--ltpink);
+  color: var(--pink);
 }
 
 h2 {
   font-size: 48rem;
+  
 }
-
 
 
 .App { 
@@ -40,29 +42,46 @@ h2 {
   align-items: center;
   justify-content: center;
   /* padding-bottom: 50px; */
+  border: 2px solid var(--taupe);
+  min-height: 100vh;
 }
 
 
 
 .section {
-  /* width: 90vw; */
-  /* margin: 0 auto; */
-  /* padding-top: 0px; */
-  padding: 1vw;
-  /* border: 2px solid pink; */
-  /* font-size: 1.1rem; */
+  background-color: #FBFF12;
 }
 
 .section h2 {
   font-family: 'Fira Code', monospace;
-  color: var(--ltpink);
+  color: var(--taupe);
   margin: 0px;
 }
 
 .section p {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 5vw;
 }
+
+
+
+.expander {
+  background-color: #FF70E2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 .progressBar {
   position: fixed;
