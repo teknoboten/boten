@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import Skills from './Skills.js'
+import { skills } from '../rzm.js'
 
 export default function SkillsContainer() {
-    const [showSkills, setShowSkills] = useState(false)
-    const toggleSkills = () => setShowSkills(!showSkills)
-
     return (
-        <div onClick={toggleSkills} className="section">
-            <h2>Technical Skills</h2>
-
-            {showSkills && <Skills />}
+        <div className="section">
+            <h3>Languages</h3>
+            <span>{skills.languages}</span>
+            <h3>Frameworks & Libraries</h3>
+            <span>{skills.frameworks}</span>
+            <h3>Familiar Toolbox</h3>
+            <span>{skills.toolbox}</span>
         </div>
     )
 }
