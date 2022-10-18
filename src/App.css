@@ -114,10 +114,34 @@ h3 {
   /* border: 2px solid var(--silk); */
 }
 
+.project {
+  background-color: #815E5B;
+  border: 1px solid var(--pink);
+  display: flex;
+  justify-content: space-between;
+  padding: 16rem;
+}
 
+.projectImage {
+  background-color: #FBFF12;
+  height: 15vw;
+  width: 15vw;
+}
 
+.projectDetails {
+  border: 1px solid yellowgreen;
+  width: 50vw; 
+}
 
+.projectDetails p {
+  font-size: 24rem;
+  font-family: 'Fira Code', monospace;
+}
 
+.tags {
+  font-size: 16rem;
+  background-color: #FFE5D9;
+}
 
 
 

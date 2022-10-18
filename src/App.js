@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import useViewportSize from './hooks/useViewportSize'
 // import logo from './serraDALLE.png';
 import { motion, useScroll, AnimatePresence, LayoutGroup } from 'framer-motion'
 
@@ -8,6 +9,9 @@ import Header from './components/Header'
 import Expander from './components/Expander'
 
 function App() {
+    // const { height, width } = useViewportSize()
+    const viewport = useViewportSize()
+
     return (
         <div className="App">
             <Header />
