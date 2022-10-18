@@ -5,7 +5,7 @@ import Project from './Project.js'
 
 export default function ProjectsContainer() {
     return (
-        <div>
+        <div class="content">
             {recentProjects.map((project) => (
                 <Project
                     key={project.title}

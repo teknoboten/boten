@@ -5,11 +5,10 @@ import { motion } from 'framer-motion'
 
 export default function Summary() {
     return (
-        <motion.div className="section">
-            {/* <motion.p>{summary}</motion.p> */}
+        <div class="content">
             {summary.map((p, index) => (
                 <p key={index}>{p}</p>
             ))}
-        </motion.div>
+        </div>
     )
 }

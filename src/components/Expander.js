@@ -7,7 +7,6 @@ import JorbsContainer from './JorbsContainer'
 
 const classNames = require('classnames');
 
-
 function Expander({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
 
@@ -17,9 +16,6 @@ function Expander({ title, content }) {
     });
 
     return (
-
-
-
         <motion.div
             className={expanderClass}
             layout

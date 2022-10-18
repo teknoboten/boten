@@ -9,6 +9,7 @@
 html {
   font-size: 6.25%;
   background-color: var(--white);
+  padding-bottom: 48rem;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
 }
 
 a {
+  color:#FF70E2;
   text-decoration: none;
 }
 
@@ -31,67 +33,86 @@ h1 {
 }
 
 h2 {
+  font-family: 'Fira Code', monospace;
   font-size: 48rem;
 }
 
+h3 {
+  font-family: 'Fira Code', monospace;
+  font-size: 16rem;
+}
+
+.pink {
+  font-family: 'Sofia', cursive;
+  color: var(--pink);
+  font-size: 32rem;
+  /* font-size: 16rem; */
+}
+
+.yellow {
+  font-family: 'Space Mono', monospace;
+  color: var(--lemon);
+  background-color: #0C0F0A;
+  font-size: 16rem;
+}
 
 .App { 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding-bottom: 50px; */
-  border: 2px solid var(--taupe);
   min-height: 100vh;
 }
 
-
-
-.section {
-  /* background-color: #FBFF12; */
-  border: 2px solid lime;
+@media only screen and (max-width: 320px) {
+  .expander {
+    width: 90vw;
+  }
 }
 
-.section h2 {
-  font-family: 'Fira Code', monospace;
-  /* color: var(--taupe); */
-  margin: 0px;
-}
-
-.section p {
-  /* border: 1px solid black; */
-  margin: 5vw;
-}
-
-
-
-.expander {
-  background-color: var(--silk);
-  width: 30vw;
-  padding: 0;
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .expander {
     width: 80vw;
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
   .expander {
     width: 30vw;
   }
 }
 
+.expander {
+  background-color: var(--silk);
+  /* border: 1px solid red; */
+}
 
+.expander h2 {
+  font-family: 'Fira Code', monospace;
+  margin: 0px 8rem 0px;
+}
+
+.expander h3 {
+  margin: 16rem;
+}
+
+.expander p {
+  margin: 16rem 32rem 16rem;
+  /* border: 2px solid blue; */
+}
 
 .isOpen {
   width: 80vw;
-  background-color: #FBFF12;
+  background-color: white;
+  margin-top: 64rem;
+  /* border: 1px solid blue; */
 }
 
 
-
+.content {
+  padding: 32rem;
+  /* border: 2px solid var(--silk); */
+}
 
 
 

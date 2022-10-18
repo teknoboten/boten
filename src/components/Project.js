@@ -4,10 +4,14 @@ import { motion } from 'framer-motion'
 export default function Project({ title, description, url }) {
     return (
         <div>
-            <h3>
-                <a href={url}>{title}</a>
-            </h3>
-            <p>{description}</p>
+            <p>
+                <span class="pink">
+                    <a href={url} target="_blank">
+                        {title}
+                    </a>
+                </span>
+                <p>{description}</p>
+            </p>
         </div>
     )
 }
