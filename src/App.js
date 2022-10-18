@@ -8,20 +8,20 @@ import './App.css'
 import Header from './components/Header'
 import Expander from './components/Expander'
 
-const classNames = require('classnames')
-
 function App() {
   const viewport = useViewportSize()
 
   return (
     <div className="App">
-      <Header />
-      <LayoutGroup>
-        <Expander title="summary" />
-        <Expander title="recent projects" />
-        <Expander title="technical skills" />
-        <Expander title="employment history" />
-      </LayoutGroup>
+      <div className="collapsed">
+        <Header />
+        <LayoutGroup>
+          <Expander title="about" />
+          <Expander title="recent projects" />
+          <Expander title="technical skills" />
+          <Expander title="employment history" />
+        </LayoutGroup>
+      </div>
     </div>
   )
 }

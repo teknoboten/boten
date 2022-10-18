@@ -15,8 +15,8 @@ function Expander({ title, content }) {
     const expanderClass = classNames({
         expander: true,
         'isOpen': isOpen,
-        // 'small': (viewport === 'small'),
-        // 'medium': (viewport === 'medium'),
+        'small': (viewport === 'small'),
+        'medium': (viewport === 'medium'),
         'large': (viewport === 'large'),
     });
 
@@ -28,7 +28,7 @@ function Expander({ title, content }) {
         >
         
         <motion.h2 layout>{title}</motion.h2>
-        {isOpen && title === 'summary' ? <Summary /> : null}
+        {isOpen && title === 'about' ? <Summary /> : null}
         {isOpen && title === 'recent projects' ? <ProjectsContainer /> : null}
         {isOpen && title === 'technical skills' ? <SkillsContainer /> : null}
         {isOpen && title === 'employment history' ? <JorbsContainer /> : null }

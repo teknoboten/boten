@@ -76,6 +76,7 @@ h3 {
   min-height: 100vh;
 }
 
+
 .small {
   width: 90vw;
   background-color: aqua;
@@ -91,12 +92,15 @@ h3 {
 }
 
 .expander {
-  background-color: var(--silk);
+  background-color: white;
+  /* background-color: var(--silk); */
+  width: 60vw;
   /* border: 1px solid red; */
 }
 
 .expander h2 {
   font-family: 'Fira Code', monospace;
+  font-size: 32rem;
   margin: 0px 8rem 0px;
 }
 
@@ -112,7 +116,7 @@ h3 {
 .isOpen {
   width: 60vw;
   background-color: white;
-  margin-top: 64rem;
+  margin-top: 32rem;
   /* border: 1px solid blue; */
 }
 

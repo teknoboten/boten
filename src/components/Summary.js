@@ -1,14 +1,20 @@
 import React, { useState } from 'react'
-import { summary } from '../rzm'
+import { about } from '../rzm'
 import Project from './Project.js'
 import { motion } from 'framer-motion'
 
 export default function Summary() {
   return (
     <div className="content">
-      {summary.map((p, index) => (
+      {about.map((p, index) => (
         <p key={index}>{p}</p>
       ))}
     </div>
   )
 }
+
+// <div className="content">
+// {about.map((p, index) => (
+//   <p key={index}>{p}</p>
+// ))}
+// </div>

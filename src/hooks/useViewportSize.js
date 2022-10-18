@@ -12,7 +12,7 @@ export default function useViewportSize() {
       setViewPort('large')
     }
     console.log('viewport is:', viewport)
-  })
+  }, [viewport])
 
   //   return { viewport }
   return viewport
