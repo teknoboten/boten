@@ -21,6 +21,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 24rem;
+  font-family: 'Fira Code', monospace;
+}
+
 /* fonts  */
 /* font-family: 'Space Mono', monospace; */
 /* font-family: 'Fira Code', monospace;
@@ -51,8 +56,15 @@ h3 {
 
 .yellow {
   font-family: 'Space Mono', monospace;
-  color: var(--lemon);
-  background-color: #0C0F0A;
+  background-color: var(--lemon);
+  color: #0C0F0A;
+  font-size: 16rem;
+}
+
+.silk {
+  font-family: 'Space Mono', monospace;
+  background-color: var(--silk);
+  color: #0C0F0A;
   font-size: 16rem;
 }
 
@@ -64,22 +76,18 @@ h3 {
   min-height: 100vh;
 }
 
-@media only screen and (max-width: 320px) {
-  .expander {
-    width: 90vw;
-  }
+.small {
+  width: 90vw;
+  background-color: aqua;
 }
 
-@media only screen and (max-width: 768px) {
-  .expander {
-    width: 80vw;
-  }
+.medium {
+  background-color: greenyellow;
 }
 
-@media only screen and (min-width: 992px) {
-  .expander {
-    width: 30vw;
-  }
+.large {
+  width: 30vw;
+  /* background-color: orangered; */
 }
 
 .expander {
@@ -102,7 +110,7 @@ h3 {
 }
 
 .isOpen {
-  width: 80vw;
+  width: 60vw;
   background-color: white;
   margin-top: 64rem;
   /* border: 1px solid blue; */
@@ -115,8 +123,8 @@ h3 {
 }
 
 .project {
-  background-color: #815E5B;
-  border: 1px solid var(--pink);
+  /* background-color: #815E5B; */
+  /* border: 1px solid var(--pink); */
   display: flex;
   justify-content: space-between;
   padding: 16rem;
@@ -129,7 +137,7 @@ h3 {
 }
 
 .projectDetails {
-  border: 1px solid yellowgreen;
+  /* border: 1px solid yellowgreen; */
   width: 50vw; 
 }
 
@@ -141,10 +149,23 @@ h3 {
 .tags {
   font-size: 16rem;
   background-color: #FFE5D9;
+  margin: 2rem;
 }
 
+.jorb {
+  /* border: 2px solid blue; */
+  padding: 16rem;
+}
 
+.jorb h2 {
+  font-family: 'Fira Code', monospace;
+  font-size: 32rem;
+}
 
+.jorb span {
+  padding: 2rem;
+  margin: 2rem;
+}
 
 /* 
 .progressBar {

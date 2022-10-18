@@ -4,17 +4,17 @@ import { recentProjects } from '../rzm.js'
 import Project from './Project.js'
 
 export default function ProjectsContainer() {
-    return (
-        <div class="content">
-            {recentProjects.map((project) => (
-                <Project
-                    key={project.title}
-                    title={project.title}
-                    description={project.description}
-                    url={project.url}
-                    tags={project.tags}
-                />
-            ))}
-        </div>
-    )
+  return (
+    <div className="content">
+      {recentProjects.map((project) => (
+        <Project
+          key={project.title}
+          title={project.title}
+          description={project.description}
+          url={project.url}
+          tags={project.tags}
+        />
+      ))}
+    </div>
+  )
 }

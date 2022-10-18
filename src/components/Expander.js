@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import useViewportSize from '../hooks/useViewportSize'
 import Summary from './Summary'
 import ProjectsContainer from './ProjectsContainer'
 import SkillsContainer from './SkillsContainer'
@@ -9,10 +10,14 @@ const classNames = require('classnames');
 
 function Expander({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
+    const viewport = useViewportSize();
 
     const expanderClass = classNames({
         expander: true,
-        'isOpen': isOpen
+        'isOpen': isOpen,
+        // 'small': (viewport === 'small'),
+        // 'medium': (viewport === 'medium'),
+        'large': (viewport === 'large'),
     });
 
     return (

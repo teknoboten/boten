@@ -4,11 +4,11 @@ import Project from './Project.js'
 import { motion } from 'framer-motion'
 
 export default function Summary() {
-    return (
-        <div class="content">
-            {summary.map((p, index) => (
-                <p key={index}>{p}</p>
-            ))}
-        </div>
-    )
+  return (
+    <div className="content">
+      {summary.map((p, index) => (
+        <p key={index}>{p}</p>
+      ))}
+    </div>
+  )
 }

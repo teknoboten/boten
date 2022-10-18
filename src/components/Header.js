@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import classNames from 'classnames'
+import serra from '../serraDALLE.png'
 
 // const headerVariants = {
 // hidden: { opacity: 0, scale: 50, color: 'white' },
@@ -16,9 +17,10 @@ import classNames from 'classnames'
 // }
 
 export default function Header() {
-    return (
-        <div>
-            <h1>serra boten</h1>
-        </div>
-    )
+  return (
+    <div>
+      {/* <img src={serra} /> */}
+      <h1>serra boten</h1>
+    </div>
+  )
 }
