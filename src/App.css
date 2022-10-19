@@ -1,9 +1,10 @@
 :root {
-  --black: #0C0F0A;
-  --taupe: #815E5B;
+  --dark: #0C0F0A;
+  --mid2: #F3EAF4;
+  --mid1: #FFE5D9;
   --pink: #FF70E2;
   --lemon: #FBFF12;
-  --silk: #FFE5D9;
+ 
 }
 
 html {
@@ -22,8 +23,18 @@ a {
 }
 
 p {
+  font-family: 'Fira Code', monospace;
+}
+
+
+.lead {
   font-size: 24rem;
   font-family: 'Fira Code', monospace;
+  margin-bottom: 32rem;
+}
+
+.strikeout {
+  text-decoration: line-through;
 }
 
 /* fonts  */
@@ -63,7 +74,7 @@ h3 {
 
 .silk {
   font-family: 'Space Mono', monospace;
-  background-color: var(--silk);
+  background-color: var(--mid1);
   color: #0C0F0A;
   font-size: 16rem;
 }
@@ -72,6 +83,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: space-between; */
   justify-content: center;
   min-height: 100vh;
 }
@@ -81,6 +93,11 @@ h3 {
   width: 90vw;
   background-color: aqua;
 }
+
+/* .small .content {
+  height: 100%;
+  width: 100%;
+} */
 
 .medium {
   background-color: greenyellow;
@@ -114,16 +131,28 @@ h3 {
 }
 
 .isOpen {
-  width: 60vw;
+  /* width: 60vw; */
   background-color: white;
   margin-top: 32rem;
   /* border: 1px solid blue; */
 }
 
+h2 .isOpen {
+  padding-left: 8rem;
+  width: 100%;
+}
 
 .content {
-  padding: 32rem;
+  padding: 8rem 16rem 32rem;
   /* border: 2px solid var(--silk); */
+  color: 
+}
+
+.header {
+  padding: 16rem;
+  width: 60vw;
+  margin: auto;
+  margin-bottom: 32rem;
 }
 
 .project {

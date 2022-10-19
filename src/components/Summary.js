@@ -4,11 +4,11 @@ import { motion } from 'framer-motion'
 
 export default function Summary() {
   return (
-    <div className="content">
+    <motion.div layout className="content">
       {about.map((p, index) => (
         <p key={index}>{p}</p>
       ))}
-    </div>
+    </motion.div>
   )
 }
 

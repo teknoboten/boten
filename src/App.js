@@ -13,12 +13,12 @@ function App() {
 
   return (
     <div className="App">
-      <div className="collapsed">
-        <Header />
+      <Header />
+      <div>
         <LayoutGroup>
           <Expander title="about" />
-          <Expander title="recent projects" />
           <Expander title="technical skills" />
+          <Expander title="recent projects" />
           <Expander title="employment history" />
         </LayoutGroup>
       </div>
