@@ -8,6 +8,13 @@ import JorbsContainer from './JorbsContainer'
 
 const classNames = require('classnames');
 
+const variants = {
+    open: { x: -100, opacity: 0.75 },
+    closed: { x: 0, opacity: 1 },
+  }
+  
+  
+
 function Expander({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
     const viewport = useViewportSize();
@@ -15,9 +22,9 @@ function Expander({ title, content }) {
     const expanderClass = classNames({
         expander: true,
         'isOpen': isOpen,
-        'small': (viewport === 'small'),
-        'medium': (viewport === 'medium'),
-        'large': (viewport === 'large'),
+        // 'small': (viewport === 'small'),
+        // 'medium': (viewport === 'medium'),
+        // 'large': (viewport === 'large'),
     });
 
     return (
@@ -27,7 +34,19 @@ function Expander({ title, content }) {
             onClick={() => setIsOpen(!isOpen)}
         >
         
-        <motion.h2 layout>{title}</motion.h2>
+        {/* <motion.h2 layout>{title}</motion.h2> */}
+
+        <motion.h2 
+            // whileHover={{ opacity: 1 }}
+            variants={variants}
+            animate={isOpen ? "open" : "closed"}
+        >
+            {title}
+        </motion.h2>
+
+
+
+
         {isOpen && title === 'about' ? <Summary /> : null}
         {isOpen && title === 'recent projects' ? <ProjectsContainer /> : null}
         {isOpen && title === 'technical skills' ? <SkillsContainer /> : null}

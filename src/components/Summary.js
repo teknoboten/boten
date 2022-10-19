@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { about } from '../rzm'
-import Project from './Project.js'
 import { motion } from 'framer-motion'
 
 export default function Summary() {
