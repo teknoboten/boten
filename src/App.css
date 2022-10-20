@@ -22,6 +22,7 @@ body {
 a {
   color:#FF70E2;
   text-decoration: none;
+  font-weight: 600;
 }
 
 p {
@@ -137,7 +138,7 @@ h3 {
   /* width: 60vw; */
   background-color: white;
   /* background-color: #FBFF12; */
-  margin-top: 64rem;
+  margin-top: 40rem;
   /* border: 1px solid blue; */
 }
 
@@ -156,6 +157,8 @@ h2 .isOpen {
   /* border: 2px solid var(--pink); */
 }
 
+
+
 .header {
   padding: 16rem;
   width: 60vw;
@@ -163,12 +166,6 @@ h2 .isOpen {
   margin-bottom: 32rem;
 }
 
-
-.projectImage {
-  background-color: #FBFF12;
-  height: 15vw;
-  width: 15vw;
-}
 
 .projectsContainer {
   /* border: 1px solid yellow;   */
@@ -198,11 +195,12 @@ h2 .isOpen {
 }
 
 .github {
-  background-color: var(--lemon);
   font-size: 16rem;
-  padding: 2rem;
-  margin-top: 32rem;
-  color: var(--dark);
+}
+
+.github a {
+  color: var(--lemon);
+  font-size: 16rem;
 }
 
 .tags {
@@ -214,7 +212,7 @@ h2 .isOpen {
 
 .jorb {
   /* border: 2px solid blue; */
-  padding: 16rem;
+  /* padding: 16rem;/ */
 }
 
 .jorb h2 {
@@ -243,3 +241,12 @@ h2 .isOpen {
   background: var(--blue);
   transform-origin: 0%;
 } */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+

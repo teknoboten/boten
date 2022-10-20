@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import octocat from '../githubDarkk.png'
 
 export default function Project({ title, description, url, tags, github }) {
   return (
@@ -12,12 +11,20 @@ export default function Project({ title, description, url, tags, github }) {
           </a>
         </div>
 
-        <span>
-          <a className="github" href={github} target="_blank">
-            github
-          </a>
-        </span>
-        <p>{description}</p>
+        <p>
+          {description}
+          <span className="github">
+            <a href={github} target="_blank">
+              <motion.span
+                whileHover={{ backgroundColor: 'var(--mid2)' }}
+                className="material-symbols-outlined"
+              >
+                north_east
+              </motion.span>
+            </a>
+          </span>
+        </p>
+
         <span>
           {tags.map((t) => (
             <span key={t} className="tags">

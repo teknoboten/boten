@@ -6,17 +6,17 @@ export default function SkillsContainer() {
   return (
     <div className="content">
       <p>
-        <span className="pink">Languages: </span>
+        <span className="tags">Languages</span>
         {skills.languages}
       </p>
 
       <p>
-        <span className="pink">Frameworks & Libraries: </span>
+        <span className="tags">Frameworks & Libraries</span>
         {skills.frameworks}
       </p>
 
       <p>
-        <span className="pink">Familiar Toolbox: </span>
+        <span className="tags">Familiar Toolbox</span>
         {skills.toolbox}
       </p>
     </div>

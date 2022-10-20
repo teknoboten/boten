@@ -16,7 +16,7 @@ function App() {
       <Header />
       <div>
         <LayoutGroup>
-          <Expander title="about" />
+          {/* <Expander title="about" /> */}
           <Expander title="technical skills" />
           <Expander title="recent projects" />
           <Expander title="employment history" />
