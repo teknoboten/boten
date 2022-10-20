@@ -6,6 +6,7 @@ const about = [
 
 const squamishGreenlaw = {
   title: 'Squamishgreenlaw.ca',
+  github: 'https://github.com/teknoboten/SquamishGreenlaw',
   url: 'https://www.squamishgreenlaw.ca/',
   description:
     'Single page app built with “artisanal” HTML, CSS, Javascript, and a dash of Bootstrap. Set up continuous deployment using Netlify / GitHub and used Stripe’s API for managing donations.',
@@ -14,6 +15,7 @@ const squamishGreenlaw = {
 
 const tripster = {
   title: 'Tripster',
+  github: 'https://github.com/teknoboten/tripster',
   url: 'https://github.com/teknoboten/tripster',
   description:
     'Single page photo journal / map app built with React, Express, Firebase, Mapbox and SQL. Photos are parsed for exif data and added to a map as thumbnails. Responsive modals give a pleasant UX for adding / editing / viewing images.',
@@ -22,6 +24,7 @@ const tripster = {
 
 const decisionWizard = {
   title: 'Decision Wizard',
+  github: 'https://github.com/jtoguri/decision_wizard',
   url: 'https://github.com/jtoguri/decision_wizard',
   description:
     'Hybrid social polling app, written with Express, EJS, jQuery and SQL. Integrated Mailgun to automate notification emails. Learned a lot about ‘git sadness’ but more importantly -  how to avoid it.',

@@ -4,7 +4,7 @@ import { skills } from '../rzm.js'
 
 export default function SkillsContainer() {
   return (
-    <div className="content ">
+    <div className="content">
       <p>
         <span className="pink">Languages: </span>
         {skills.languages}

@@ -4,19 +4,6 @@ import classNames from 'classnames'
 import useViewportSize from '../hooks/useViewportSize'
 import serra from '../serraDALLE.png'
 
-// const headerVariants = {
-// hidden: { opacity: 0, scale: 50, color: 'white' },
-// visible: { opacity: 1, scale: 1, color: 'black' },
-// hover: {
-//   scale: 1.1,
-//   color: 'fuchsia',
-//   transition: {
-//     type: 'spring',
-//     bounce: 1,
-//   }
-// }
-// }
-
 export default function Header() {
   return (
     <div>
@@ -33,13 +20,10 @@ export default function Header() {
           <motion.span
             initial={{
               backgroundColor: 'rgba(0,0,0,0)',
-
-              // color: 'var(--dark)',
             }}
             animate={{
-              backgroundColor: 'rgba(0,0,0,0.8)',
-              // color: 'var(--mid2)',
-              transition: { delay: 1, type: 'tween', duration: 2 },
+              backgroundColor: 'rgba(0,0,0,0.7)',
+              transition: { delay: 2, type: 'tween', duration: 2 },
             }}
           >
             play with

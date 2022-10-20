@@ -1,6 +1,7 @@
 :root {
   --dark: #0C0F0A;
   --mid2: #F3EAF4;
+  --mid3: #C5B1C7;
   --mid1: #FFE5D9;
   --pink: #FF70E2;
   --lemon: #FBFF12;
@@ -15,6 +16,7 @@ html {
 
 body {
   font-size: 16rem;
+  font-family: 'Fira Code', monospace;
 }
 
 a {
@@ -24,6 +26,7 @@ a {
 
 p {
   font-family: 'Fira Code', monospace;
+  padding: 8rem;  
 }
 
 
@@ -31,6 +34,7 @@ p {
   font-size: 24rem;
   font-family: 'Fira Code', monospace;
   margin-bottom: 32rem;
+  padding: 8rem;
 }
 
 .strikeout {
@@ -110,15 +114,14 @@ h3 {
 
 .expander {
   background-color: white;
-  /* background-color: var(--silk); */
   width: 60vw;
-  /* border: 1px solid red; */
 }
 
 .expander h2 {
   font-family: 'Fira Code', monospace;
   font-size: 32rem;
   margin: 0px 8rem 0px;
+  /* color: var(--mid3); */
 }
 
 .expander h3 {
@@ -133,19 +136,24 @@ h3 {
 .isOpen {
   /* width: 60vw; */
   background-color: white;
-  margin-top: 32rem;
+  /* background-color: #FBFF12; */
+  margin-top: 64rem;
   /* border: 1px solid blue; */
 }
 
 h2 .isOpen {
   padding-left: 8rem;
   width: 100%;
+  color: var(--dark);
+}
+
+.expander .isOpen h2 {
+  color: var(--dark);  
 }
 
 .content {
   padding: 8rem 16rem 32rem;
-  /* border: 2px solid var(--silk); */
-  color: 
+  /* border: 2px solid var(--pink); */
 }
 
 .header {
@@ -155,13 +163,6 @@ h2 .isOpen {
   margin-bottom: 32rem;
 }
 
-.project {
-  /* background-color: #815E5B; */
-  /* border: 1px solid var(--pink); */
-  display: flex;
-  justify-content: space-between;
-  padding: 16rem;
-}
 
 .projectImage {
   background-color: #FBFF12;
@@ -169,20 +170,46 @@ h2 .isOpen {
   width: 15vw;
 }
 
-.projectDetails {
-  /* border: 1px solid yellowgreen; */
-  width: 50vw; 
+.projectsContainer {
+  /* border: 1px solid yellow;   */
+  margin-bottom: 64rem;
 }
 
-.projectDetails p {
-  font-size: 24rem;
+.project {
+  /* background-color: var(--mid2); */
+  /* border: 1px solid var(--mid1);  */
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  /* justify-content: space-between; */
+  padding-top: 32rem;
+  /* width: 100%; */
+  padding: 8rem 16rem 32rem;
+}
+
+.projectName {
+  /* font-family: 'Space Mono', monospace; */
   font-family: 'Fira Code', monospace;
+  /* background-color: var(--lemon); */
+  color: #0C0F0A;
+  font-size: 24rem;
+  padding: 4rem;
+  font-weight: 700;
+}
+
+.github {
+  background-color: var(--lemon);
+  font-size: 16rem;
+  padding: 2rem;
+  margin-top: 32rem;
+  color: var(--dark);
 }
 
 .tags {
   font-size: 16rem;
   background-color: #FFE5D9;
   margin: 2rem;
+  padding: 1rem;
 }
 
 .jorb {
@@ -192,7 +219,13 @@ h2 .isOpen {
 
 .jorb h2 {
   font-family: 'Fira Code', monospace;
-  font-size: 32rem;
+  font-size: 24rem;
+}
+
+.jorb a {
+  font-family: 'Fira Code', monospace;
+  font-size: 24rem;
+  color: var(--dark);
 }
 
 .jorb span {

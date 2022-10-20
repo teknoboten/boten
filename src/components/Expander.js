@@ -10,11 +10,13 @@ const classNames = require('classnames');
 
 const titleVariants = {
     open: { backgroundColor: 'var(--mid2)', 
-        color: 'var(--dark)',   
+        color: 'white',   
         x: -100, opacity: 0.75, width: '120%',
         transition: { type: 'spring', stiffness: '200'}  
     },
-    closed: { x: 0, opacity: 1,
+    closed: { 
+        color: 'white', backgroundColor: 'var(--mid3)',
+        x: 0, opacity: 1,
         transition: { type: 'spring', stiffness: '200'}
     },
   }
@@ -43,7 +45,12 @@ function Expander({ title, content }) {
             variants={titleVariants}
             animate={isOpen ? "open" : "closed"}
         >
-            <h2>{title}</h2>
+            <motion.h2
+                // initial={{ color: 'white    ', backgroundColor: 'var(--mid3)'}}
+                variants={{titleVariants}}
+                animate="open"
+                // whileHover={{ color: 'var(--pink)'}}
+            >{title}</motion.h2>
         </motion.div>
 
         {isOpen && title === 'about' ? <Summary /> : null}
