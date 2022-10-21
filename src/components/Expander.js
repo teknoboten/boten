@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import useViewportSize from '../hooks/useViewportSize'
+// import useViewportSize from '../hooks/useViewportSize'
 import Summary from './Summary'
 import ProjectsContainer from './ProjectsContainer'
 import SkillsContainer from './SkillsContainer'
@@ -11,13 +11,13 @@ const classNames = require('classnames');
 const titleVariants = {
     open: { backgroundColor: 'var(--mid2)', 
         color: 'white',   
-        x: -100, opacity: 0.75, width: '120%',
-        transition: { type: 'spring', stiffness: '200'}  
+        opacity: 0.75, width: '110%', x: -10,
+        // transition: { type: 'spring', stiffness: '200'}  
     },
     closed: { 
         color: 'white', backgroundColor: 'var(--mid3)',
-        x: 0, opacity: 1,
-        transition: { type: 'spring', stiffness: '200'}
+        opacity: 1, x: 0,
+        // transition: { type: 'spring', stiffness: '200'}
     },
   }
   

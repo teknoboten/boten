@@ -14,8 +14,10 @@ function App() {
   return (
     <div className="App">
       <div>
+        <Header />
+      </div>
+      <div>
         <LayoutGroup>
-          <Header />
           <Expander title="about me" />
           <Expander title="technical skills" />
           <Expander title="recent projects" />

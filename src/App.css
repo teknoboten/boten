@@ -27,11 +27,6 @@ a {
 
 
 
-.lead {
-  font-size: 24rem;
-  font-family: 'Fira Code', monospace;
-
-}
 
 /* fonts  */
 /* font-family: 'Space Mono', monospace; */
@@ -40,7 +35,7 @@ a {
 
 h1 {
   font-family: 'Fira Code', monospace;
-  font-size: 96rem;
+  font-size: 64rem;
   color: var(--pink);
 }
 
@@ -53,24 +48,27 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly ;
+  /* justify-content: center; */
+  /* padding-top: 10vh; */
   min-height: 100vh;
+  max-width: 100vw;;
 }
 
 .expander {
   background-color: white;
   width: 60vw;
+  margin: 0 auto 0;
+  /* border: 2px solid #FF70E2; */
+  padding: 0px;
 }
 
 .expander h2 {
   font-family: 'Fira Code', monospace;
   font-size: 32rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-
-.expander h3 {
-  margin: 16rem;
-}
-
 
 .isOpen {
   width: 60vw;
@@ -78,23 +76,36 @@ h3 {
   /* background-color: #FBFF12; */
   /* margin-top: 40rem; */
   /* border: 1px solid blue; */
+  padding: 0px;
 }
 
-h2 .isOpen {
+.isOpen h2 {
   padding-left: 8rem;
-  width: 100%;
+  /* width: 100%; */
   color: var(--dark);
+  margin-top: 5vh;
 }
 
 .header {
   width: 80vw;
   display: flex;
   flex-direction: column;
-  margin: 0 auto 5vh;
+  justify-content: flex-end;
+  /* margin: 0 auto 5vh; */
+  /* border: 1px solid greenyellow; */
+  height: 50vh;
 }
 
 .header p {
   padding: 0 5vw;
+  margin: 2vh auto;
+  /* background-color: aqua; */
+}
+
+.lead p {
+  font-size: 24rem;
+  font-family: 'Fira Code', monospace;
+  padding: 0 2vw;
 }
 
 .skill {

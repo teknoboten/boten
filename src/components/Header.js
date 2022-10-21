@@ -16,31 +16,19 @@ export default function Header() {
           developer living in the pacific northwest.
         </p>
       </div>
-      {/* <p>
-        My background in technical support and network operations has given me
-        passion for learning, problem solving and iterative optimization. My
-        super powers include creative thinking, determination, bug hunting
-        (technical / bitey), plus the ability to make a salad that (most) people
-        actually want to eat.
-      </p>
-      <p>
-        Coworkers and clients have described me as patient, hard-working, clever
-        and{' '}
-        <a href="https://www.linkedin.com/in/serraboten/details/recommendations/">
-          “pleasant to work with, as long as you don’t mind the literal LOL-ing
-          coming from her desk”
-        </a>
-        .
-      </p> */}
       <p>
         This resume is an ever evolving home for various projects I'm working
-        on, and has also been a very legitimate reason for me to{' '}
+        on, and also a very legitimate reason for me to{' '}
         <motion.span
           initial={{
-            backgroundColor: 'rgba(0,0,0,0)',
+            // backgroundColor: 'rgba(0,0,0,0)',
+            backgroundColor: 'rgba(243, 234, 244,0)',
+            color: 'rgba(0,0,0,1)',
           }}
           animate={{
-            backgroundColor: 'rgba(0,0,0,0.7)',
+            backgroundColor: 'rgba(243, 234, 244,0.6)',
+            color: 'rgba(243, 234, 244,0.7)',
+            // backgroundColor: 'rgba(0,0,0,0.7)',
             transition: { delay: 2, type: 'tween', duration: 2 },
           }}
         >
