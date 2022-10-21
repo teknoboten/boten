@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import useViewportSize from './hooks/useViewportSize'
 import logo from './serraDALLE.png'
 import { motion, useScroll, AnimatePresence, LayoutGroup } from 'framer-motion'
@@ -13,10 +13,10 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
       <div>
         <LayoutGroup>
-          {/* <Expander title="about" /> */}
+          <Header />
+          <Expander title="about me" />
           <Expander title="technical skills" />
           <Expander title="recent projects" />
           <Expander title="employment history" />

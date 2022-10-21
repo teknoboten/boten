@@ -24,14 +24,14 @@ const titleVariants = {
   
 function Expander({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
-    const viewport = useViewportSize();
+    // const viewport = useViewportSize();
 
     const expanderClass = classNames({
         expander: true,
         'isOpen': isOpen,
-        'small': (viewport === 'small'),
-        'medium': (viewport === 'medium'),
-        'large': (viewport === 'large'),
+        // 'small': (viewport === 'small'),
+        // 'medium': (viewport === 'medium'),
+        // 'large': (viewport === 'large'),
     });
 
     return (
@@ -53,7 +53,7 @@ function Expander({ title, content }) {
             >{title}</motion.h2>
         </motion.div>
 
-        {isOpen && title === 'about' ? <Summary /> : null}
+        {isOpen && title === 'about me' ? <Summary /> : null}
         {isOpen && title === 'recent projects' ? <ProjectsContainer /> : null}
         {isOpen && title === 'technical skills' ? <SkillsContainer /> : null}
         {isOpen && title === 'employment history' ? <JorbsContainer /> : null }

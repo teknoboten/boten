@@ -5,7 +5,7 @@ import Jorb from './Jorb.js'
 
 export default function JorbsContainer() {
   return (
-    <div className="content">
+    <div className="projectsContainer">
       {employment.map((jorb) => (
         <Jorb
           key={jorb.company}

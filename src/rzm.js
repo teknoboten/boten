@@ -1,5 +1,5 @@
 const about = [
-  'Full stack web developer living in the Sea to Sky corridor, with a background in technical support, network operations and communication. Passionate about learning, problem solving and iterative optimization.',
+  'Passionate about learning, problem solving and iterative optimization. My super powers include creative thinking, determination, bug hunting (technical / bitey), plus the ability to make a salad that (most) people actually want to eat.',
   'My super powers include creative thinking, determination, bug hunting (technical / bitey), plus the ability to make a salad that (most) people actually want to eat.',
   'Coworkers and clients have described me as patient, hard-working, clever and “pleasant to work with, as long as you don’t mind the literal LOL-ing coming from her desk”.',
 ]

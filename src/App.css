@@ -11,7 +11,6 @@
 html {
   font-size: 6.25%;
   background-color: var(--white);
-  padding-bottom: 48rem;
 }
 
 body {
@@ -23,23 +22,15 @@ a {
   color:#FF70E2;
   text-decoration: none;
   font-weight: 600;
+  outline: none;
 }
 
-p {
-  font-family: 'Fira Code', monospace;
-  padding: 8rem;  
-}
 
 
 .lead {
   font-size: 24rem;
   font-family: 'Fira Code', monospace;
-  margin-bottom: 32rem;
-  padding: 8rem;
-}
 
-.strikeout {
-  text-decoration: line-through;
 }
 
 /* fonts  */
@@ -53,34 +44,8 @@ h1 {
   color: var(--pink);
 }
 
-h2 {
-  font-family: 'Fira Code', monospace;
-  font-size: 48rem;
-}
-
 h3 {
   font-family: 'Fira Code', monospace;
-  font-size: 16rem;
-}
-
-.pink {
-  font-family: 'Sofia', cursive;
-  color: var(--pink);
-  font-size: 32rem;
-  /* font-size: 16rem; */
-}
-
-.yellow {
-  font-family: 'Space Mono', monospace;
-  background-color: var(--lemon);
-  color: #0C0F0A;
-  font-size: 16rem;
-}
-
-.silk {
-  font-family: 'Space Mono', monospace;
-  background-color: var(--mid1);
-  color: #0C0F0A;
   font-size: 16rem;
 }
 
@@ -88,29 +53,8 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
   justify-content: center;
   min-height: 100vh;
-}
-
-
-.small {
-  width: 90vw;
-  background-color: aqua;
-}
-
-/* .small .content {
-  height: 100%;
-  width: 100%;
-} */
-
-.medium {
-  background-color: greenyellow;
-}
-
-.large {
-  width: 30vw;
-  /* background-color: orangered; */
 }
 
 .expander {
@@ -121,24 +65,18 @@ h3 {
 .expander h2 {
   font-family: 'Fira Code', monospace;
   font-size: 32rem;
-  margin: 0px 8rem 0px;
-  /* color: var(--mid3); */
 }
 
 .expander h3 {
   margin: 16rem;
 }
 
-.expander p {
-  margin: 16rem 32rem 16rem;
-  /* border: 2px solid blue; */
-}
 
 .isOpen {
-  /* width: 60vw; */
+  width: 60vw;
   background-color: white;
   /* background-color: #FBFF12; */
-  margin-top: 40rem;
+  /* margin-top: 40rem; */
   /* border: 1px solid blue; */
 }
 
@@ -148,54 +86,45 @@ h2 .isOpen {
   color: var(--dark);
 }
 
-.expander .isOpen h2 {
-  color: var(--dark);  
-}
-
-.content {
-  padding: 8rem 16rem 32rem;
-  /* border: 2px solid var(--pink); */
-}
-
-
-
 .header {
-  padding: 16rem;
-  width: 60vw;
-  margin: auto;
-  margin-bottom: 32rem;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 5vh;
 }
 
+.header p {
+  padding: 0 5vw;
+}
+
+.skill {
+  margin: 1vh 0;
+}
 
 .projectsContainer {
-  /* border: 1px solid yellow;   */
-  margin-bottom: 64rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
 }
 
 .project {
-  /* background-color: var(--mid2); */
-  /* border: 1px solid var(--mid1);  */
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  /* justify-content: space-between; */
-  padding-top: 32rem;
-  /* width: 100%; */
-  padding: 8rem 16rem 32rem;
+  /* border: 1px solid yellow;   */
+  margin: 3vh 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items:flex-start; */
 }
 
 .projectName {
-  /* font-family: 'Space Mono', monospace; */
   font-family: 'Fira Code', monospace;
-  /* background-color: var(--lemon); */
   color: #0C0F0A;
   font-size: 24rem;
-  padding: 4rem;
   font-weight: 700;
 }
 
 .github {
   font-size: 16rem;
+  margin-left: 0.5rem;
 }
 
 .github a {
@@ -206,18 +135,20 @@ h2 .isOpen {
 .tags {
   font-size: 16rem;
   background-color: #FFE5D9;
-  margin: 2rem;
-  padding: 1rem;
+  margin: 0.25rem;
+  /* padding: 1rem; */
 }
 
 .jorb {
   /* border: 2px solid blue; */
-  /* padding: 16rem;/ */
+  margin: 3vh 0;
 }
+
 
 .jorb h2 {
   font-family: 'Fira Code', monospace;
   font-size: 24rem;
+  margin: 0.5rem;
 }
 
 .jorb a {
@@ -226,9 +157,10 @@ h2 .isOpen {
   color: var(--dark);
 }
 
-.jorb span {
-  padding: 2rem;
-  margin: 2rem;
+.jorbTitle {
+  font-size: 16rem;
+  background-color: var(--lemon);
+  margin: 0.5rem;
 }
 
 /* 
