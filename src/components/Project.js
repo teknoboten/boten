@@ -5,11 +5,11 @@ export default function Project({ title, description, url, tags, github }) {
   return (
     <div className="project">
       <div>
-        <a className="projectName" href={url} target="_blank">
+        <a className="projectName" rel="noreferrer" href={url} target="_blank">
           {title}
         </a>
         <span className="github">
-          <a href={github} target="_blank">
+          <a href={github} rel="noreferrer" target="_blank">
             <motion.span
               whileHover={{ backgroundColor: 'var(--mid2)' }}
               className="material-symbols-outlined"

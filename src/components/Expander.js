@@ -24,14 +24,10 @@ const titleVariants = {
   
 function Expander({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
-    // const viewport = useViewportSize();
 
     const expanderClass = classNames({
         expander: true,
         'isOpen': isOpen,
-        // 'small': (viewport === 'small'),
-        // 'medium': (viewport === 'medium'),
-        // 'large': (viewport === 'large'),
     });
 
     return (
@@ -63,13 +59,3 @@ function Expander({ title, content }) {
 }
 
 export default Expander
-
-
-
-
-{/* <motion.h2 
-variants={variants}
-animate={isOpen ? "open" : "closed"}
->
-{title}
-</motion.h2> */}

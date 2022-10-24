@@ -1,13 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
-import classNames from 'classnames'
-import useViewportSize from '../hooks/useViewportSize'
-import serra from '../serraDALLE.png'
 
 export default function Header() {
   return (
     <div className="header">
-      {/* <img src={serra} /> */}
       <h1>hello, world...</h1>
 
       <div className="lead">
@@ -21,14 +17,12 @@ export default function Header() {
         on, and also a very legitimate reason for me to{' '}
         <motion.span
           initial={{
-            // backgroundColor: 'rgba(0,0,0,0)',
             backgroundColor: 'rgba(243, 234, 244,0)',
-            color: 'rgba(0,0,0,1)',
+            color: 'rgba(0,0,0,1.0)',
           }}
           animate={{
             backgroundColor: 'rgba(243, 234, 244,0.6)',
             color: 'rgba(243, 234, 244,0.7)',
-            // backgroundColor: 'rgba(0,0,0,0.7)',
             transition: { delay: 2, type: 'tween', duration: 2 },
           }}
         >

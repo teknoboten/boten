@@ -1,29 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import { recentProjects } from '../rzm.js'
 import Project from './Project.js'
 
-// const projectVariants = {
-//   open: {
-//     x: -100,
-//     width: '120%',
-//     transition: { type: 'spring', stiffness: '200' },
-//   },
-//   closed: {
-//     x: 0,
-//     width: '100%',
-//     transition: { type: 'spring', stiffness: '200' },
-//   },
-// }
-
 export default function ProjectsContainer() {
   return (
-    <motion.div
-      // variants={projectVariants}
-      // initial="closed"
-      // animate="open"
-      className="projectsContainer"
-    >
+    <motion.div className="projectsContainer">
       {recentProjects.map((project) => (
         <Project
           key={project.title}

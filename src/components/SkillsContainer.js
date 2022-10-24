@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { skills } from '../rzm.js'
 
 export default function SkillsContainer() {

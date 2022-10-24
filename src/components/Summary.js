@@ -1,5 +1,4 @@
 import React from 'react'
-import { about } from '../rzm'
 import { motion } from 'framer-motion'
 
 export default function Summary() {
@@ -17,7 +16,11 @@ export default function Summary() {
       <p>
         Coworkers and clients have described me as patient, hard-working, clever
         and{' '}
-        <a href="https://www.linkedin.com/in/serraboten/details/recommendations/">
+        <a
+          href="https://www.linkedin.com/in/serraboten/details/recommendations/"
+          rel="noreferrer"
+          target="_blank"
+        >
           {' '}
           “pleasant to work with, as long as you don’t mind the literal LOL-ing
           coming from her desk”
@@ -27,9 +30,3 @@ export default function Summary() {
     </motion.div>
   )
 }
-
-// <div className="content">
-// {about.map((p, index) => (
-//   <p key={index}>{p}</p>
-// ))}
-// </div>
