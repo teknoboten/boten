@@ -1,0 +1,165 @@
+:root {
+  --dark: #0C0F0A;
+  --mid2: #F3EAF4;
+  --mid3: #C5B1C7;
+  --mid1: #FFE5D9;
+  --pink: #FF70E2;
+  --lemon: #FBFF12;
+ 
+}
+
+html {
+  font-size: 6.25%;
+  background-color: var(--white);
+}
+
+body {
+  font-size: 16rem;
+  font-family: 'Fira Code', monospace;
+}
+
+a {
+  color:#FF70E2;
+  text-decoration: none;
+  font-weight: 600;
+  outline: none;
+}
+
+/* fonts  */
+/* font-family: 'Space Mono', monospace; */
+/* font-family: 'Fira Code', monospace;
+  font-family: 'Sofia', cursive; */
+
+h1 {
+  font-family: 'Fira Code', monospace;
+  font-size: 64rem;
+  color: var(--pink);
+}
+
+h3 {
+  font-family: 'Fira Code', monospace;
+  font-size: 16rem;
+}
+
+.App { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly ;
+  min-height: 100vh;
+  max-width: 100vw;;
+}
+
+.expander {
+  background-color: white;
+  width: 60vw;
+  margin: 0 auto 0;
+  padding: 0px;
+}
+
+.expander h2 {
+  font-family: 'Fira Code', monospace;
+  font-size: 32rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.isOpen {
+  width: 60vw;
+  background-color: white;
+  padding: 0px;
+}
+
+.isOpen h2 {
+  padding-left: 8rem;
+  color: var(--dark);
+  margin-top: 5vh;
+}
+
+.header {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50vh;
+}
+
+.header p {
+  padding: 0 5vw;
+  margin: 2vh auto;
+}
+
+.lead p {
+  font-size: 24rem;
+  font-family: 'Fira Code', monospace;
+  padding: 0 2vw;
+}
+
+.skill {
+  margin: 1vh 0;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+}
+
+.project {
+  margin: 3vh 0;
+}
+
+.projectName {
+  font-family: 'Fira Code', monospace;
+  color: #0C0F0A;
+  font-size: 24rem;
+  font-weight: 700;
+}
+
+.github {
+  font-size: 16rem;
+  margin-left: 0.5rem;
+}
+
+.github a {
+  color: var(--lemon);
+  font-size: 16rem;
+}
+
+.tags {
+  font-size: 16rem;
+  background-color: #FFE5D9;
+  margin: 0.25rem;
+}
+
+.jorb {
+  margin: 3vh 0;
+}
+
+
+.jorb h2 {
+  font-family: 'Fira Code', monospace;
+  font-size: 24rem;
+  margin: 0.5rem;
+}
+
+.jorb a {
+  font-family: 'Fira Code', monospace;
+  font-size: 24rem;
+  color: var(--dark);
+}
+
+.jorbTitle {
+  font-size: 16rem;
+  background-color: var(--lemon);
+  margin: 0.5rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+

@@ -1,14 +1,19 @@
 import React from 'react'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
 
 export default function Jorb({ company, position, description, years }) {
   return (
-    <div className="jorb">
-      {/* <span className="pink">{company} </span>
-        <span className="yellow">{position}</span> */}
-      <h2>{company}</h2>
-      <span className="jorbTitle">{position}</span>
-      <span className="tags">{years}</span>
-      <p>{description}</p>
-    </div>
+    <Box padding={2}>
+      <Typography variant="h6">{position}</Typography>
+      <Typography variant="body1" gutterBottom>
+        {company}
+      </Typography>
+
+      <Typography variant="body2" color="text.secondary" marginBottom={2}>
+        {description}
+      </Typography>
+      <Typography variant="caption">{years}</Typography>
+    </Box>
   )
 }

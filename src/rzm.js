@@ -16,7 +16,7 @@ const squamishGreenlaw = {
 const tripster = {
   title: 'Tripster',
   github: 'https://github.com/teknoboten/tripster',
-  url: 'https://github.com/teknoboten/tripster',
+  url: undefined,
   description:
     'Single page photo journal / map app built with React, Express, Firebase, Mapbox and SQL. Photos are parsed for exif data and added to a map as thumbnails. Responsive modals give a pleasant UX for adding / editing / viewing images.',
   tags: ['React', 'Express', 'Firebase', 'Mapbox', 'SQL', 'UX'],
@@ -25,7 +25,7 @@ const tripster = {
 const decisionWizard = {
   title: 'Decision Wizard',
   github: 'https://github.com/jtoguri/decision_wizard',
-  url: 'https://github.com/jtoguri/decision_wizard',
+  url: undefined,
   description:
     'Hybrid social polling app, written with Express, EJS, jQuery and SQL. Integrated Mailgun to automate notification emails. Learned a lot about ‘git sadness’ but more importantly -  how to avoid it.',
   tags: ['Express', 'EJS', 'jQuery', 'SQL'],
@@ -52,9 +52,9 @@ const uOfW = {
 const skills = {
   languages: 'Javascript, CSS, HTML, SQL, Ruby',
   frameworks:
-    'NodeJS, ReactJS, Express, EJS, Bootstrap, framer-motion, SASS, jQuery, styled components',
+    'NodeJS, ReactJS, MaterialUI, Express, EJS, Bootstrap, framer-motion, SASS, jQuery, styled components',
   toolbox:
-    'Git, DNS, Mocha, Chai, Jest, Firebase, Netlify, Heroku, Mailgun, Mapbox, Postman, Postgres, MongoDB, Wordpress, Storybook, Figma',
+    'Git, DNS, Chai, Jest, Firebase, Netlify, Heroku, Mailgun, Mapbox, Postman, Postgres, MongoDB',
 }
 
 const odns = {

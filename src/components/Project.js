@@ -1,34 +1,51 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Typography from '@mui/material/Typography'
+import Link from '@mui/material/Link'
+import Box from '@mui/material/Box'
 
 export default function Project({ title, description, url, tags, github }) {
   return (
-    <div className="project">
-      <div>
-        <a className="projectName" rel="noreferrer" href={url} target="_blank">
-          {title}
-        </a>
-        <span className="github">
-          <a href={github} rel="noreferrer" target="_blank">
-            <motion.span
-              whileHover={{ backgroundColor: 'var(--mid2)' }}
-              className="material-symbols-outlined"
-            >
-              north_east
-            </motion.span>
-          </a>
-        </span>
-      </div>
+    <Box
+      sx={{
+        height: '100%',
+      }}
+    >
+      <Typography gutterBottom variant="h6">
+        {title}
+      </Typography>
 
-      <p>{description}</p>
-
-      <span>
-        {tags.map((t) => (
-          <span key={t} className="tags">
-            {t}
-          </span>
-        ))}
-      </span>
-    </div>
+      <Typography variant="body2" color="text.secondary" marginBottom={2}>
+        {description}
+      </Typography>
+      <Box marginBottom={0}>
+        {url && (
+          <Link
+            href={url}
+            rel="noreferrer"
+            target="_blank"
+            color="#ec407a"
+            sx={{
+              textDecoration: 'none',
+              marginRight: 2,
+            }}
+          >
+            <Typography variant="caption">View</Typography>
+          </Link>
+        )}
+        <Link
+          href={url}
+          rel="noreferrer"
+          target="_blank"
+          color="#ff4081"
+          sx={{
+            textDecoration: 'none',
+            fontWeight: '500',
+          }}
+        >
+          <Typography variant="caption">Github</Typography>
+        </Link>
+      </Box>
+    </Box>
   )
 }
