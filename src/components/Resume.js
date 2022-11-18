@@ -1,9 +1,9 @@
 import Container from '@mui/material/Container'
 import Summary from './Summary'
-import Header from './Header'
 import Skills from './Skills'
 import ProjectsContainer from './ProjectsContainer'
 import JorbsContainer from './JorbsContainer'
+import SchoolContainer from './SchoolConatiner'
 
 function Resume() {
   return (
@@ -12,6 +12,7 @@ function Resume() {
       <Skills />
       <ProjectsContainer />
       <JorbsContainer />
+      <SchoolContainer />
     </Container>
   )
 }

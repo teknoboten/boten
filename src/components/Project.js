@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import Typography from '@mui/material/Typography'
 import Link from '@mui/material/Link'
 import Box from '@mui/material/Box'
@@ -24,23 +23,29 @@ export default function Project({ title, description, url, tags, github }) {
             href={url}
             rel="noreferrer"
             target="_blank"
-            color="#ec407a"
+            color="#ff4081"
             sx={{
               textDecoration: 'none',
               marginRight: 2,
+              bgcolor: 'rgba(255,255,255, 0.5)',
+              paddingX: '6px',
+              paddingY: '3px',
             }}
           >
             <Typography variant="caption">View</Typography>
           </Link>
         )}
         <Link
-          href={url}
+          href={github}
           rel="noreferrer"
           target="_blank"
           color="#ff4081"
           sx={{
             textDecoration: 'none',
-            fontWeight: '500',
+            marginRight: 2,
+            bgcolor: 'rgba(255,255,255, 0.5)',
+            paddingX: '6px',
+            paddingY: '3px',
           }}
         >
           <Typography variant="caption">Github</Typography>

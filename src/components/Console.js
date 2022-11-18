@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
@@ -109,7 +108,6 @@ const Console = () => {
           </motion.span>
         )}
       </Typography>
-      <Link to={'resume'}>Rezoom</Link>
     </Box>
   )
 }
