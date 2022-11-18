@@ -1,8 +1,6 @@
 import React from 'react'
-import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
-import { motion } from 'framer-motion'
 import { recentProjects } from '../rzm.js'
 import Project from './Project.js'
 
