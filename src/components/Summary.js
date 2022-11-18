@@ -1,6 +1,4 @@
 import React from 'react'
-// import { motion } from 'framer-motion'
-import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 import Link from '@mui/material/Link'
@@ -27,32 +25,47 @@ export default function Summary() {
         </Typography>
       </Grid>
 
-      <Grid item xs={12} paddingY={4} paddingX={6}>
-        <Typography variant="body">
-          <p>
-            Passionate about learning, problem solving and iterative
-            optimization. My super powers include creative thinking,
-            determination, bug hunting (technical / bitey), plus the ability to
-            make a salad that (most) people actually want to eat.
-          </p>
-          <p>
-            Coworkers and clients have described me as patient, hard-working,
-            clever and{' '}
-            <Link
-              href="https://www.linkedin.com/in/serraboten/details/recommendations/"
-              rel="noreferrer"
-              target="_blank"
-              color="#ec407a"
-              sx={{ textDecoration: 'none' }}
-            >
-              {' '}
-              “pleasant to work with, as long as you don’t mind the literal
-              LOL-ing coming from her desk”
-            </Link>
-            {/* <a > */}
-            {/* </a> */}.
-          </p>
-        </Typography>
+      <Grid container xs={12} paddingY={4} paddingX={4}>
+        <Grid item xs={12} sm={8} sx={{ marginX: 'auto' }}>
+          <Typography variant="body1">
+            <p>
+              My super powers include creative thinking, determination, and bug
+              hunting (technical / bitey). I am passionate about learning,
+              problem solving, iterative optimization, and snacks.
+            </p>
+            <p>
+              Coworkers and clients have described me as patient, hard-working,
+              clever and{' '}
+              <Link
+                href="https://www.linkedin.com/in/serraboten/details/recommendations/"
+                rel="noreferrer"
+                target="_blank"
+                color="#ec407a"
+                sx={{ textDecoration: 'none', fontWeight: '500' }}
+              >
+                {' '}
+                “pleasant to work with, as long as you don’t mind the literal
+                LOL-ing coming from her desk”
+              </Link>
+            </p>
+
+            <p>
+              Lately, I have been focussed on building things with React, but am
+              always interested in collaborating. If you'd like to chat, please
+              <Link
+                href="mailto:serra@boten.ca"
+                rel="noreferrer"
+                target="_blank"
+                color="#ec407a"
+                sx={{ textDecoration: 'none', fontWeight: '500' }}
+              >
+                {' '}
+                send me an email.
+              </Link>{' '}
+              I'd love to hear from you!
+            </p>
+          </Typography>
+        </Grid>
       </Grid>
     </Grid>
   )
