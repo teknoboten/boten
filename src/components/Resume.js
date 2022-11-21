@@ -4,6 +4,7 @@ import Skills from './Skills'
 import ProjectsContainer from './ProjectsContainer'
 import JorbsContainer from './JorbsContainer'
 import SchoolContainer from './SchoolConatiner'
+import Footer from './Footer'
 
 function Resume() {
   return (
@@ -13,16 +14,9 @@ function Resume() {
       <ProjectsContainer />
       <JorbsContainer />
       <SchoolContainer />
+      <Footer />
     </Container>
   )
 }
 
 export default Resume
-/* <div>
-  <LayoutGroup>
-    <Expander title="about me" />
-    <Expander title="technical skills" />
-    <Expander title="recent projects" />
-    <Expander title="employment history" />
-  </LayoutGroup>
-</div> */
