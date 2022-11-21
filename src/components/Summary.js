@@ -25,7 +25,7 @@ export default function Summary() {
         </Typography>
       </Grid>
 
-      <Grid container xs={12} paddingY={4} paddingX={4}>
+      <Grid container xs={12} paddingTop={4} paddingBottom={6} paddingX={4}>
         <Grid item xs={12} sm={8} sx={{ marginX: 'auto' }}>
           <Typography variant="body1">
             <p>

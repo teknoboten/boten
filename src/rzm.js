@@ -22,6 +22,15 @@ const tripster = {
   tags: ['React', 'Express', 'Firebase', 'Mapbox', 'SQL', 'UX'],
 }
 
+const fetchDogs = {
+  title: 'fetch Dogs',
+  github: 'https://github.com/teknoboten/fetchDogs',
+  url: 'https://sparkling-macaron-10cdb5.netlify.app/',
+  description:
+    'A silly app I made while teaching myself Redux, MaterialUI and ReactDND',
+  tags: ['React', 'Redux', 'UX'],
+}
+
 const decisionWizard = {
   title: 'Decision Wizard',
   github: 'https://github.com/jtoguri/decision_wizard',
@@ -85,7 +94,7 @@ const wardrop = {
   years: '2009 - 2012',
 }
 
-const recentProjects = [squamishGreenlaw, tripster, decisionWizard]
+const recentProjects = [squamishGreenlaw, tripster, fetchDogs, decisionWizard]
 const education = [lightHouseLabs, winnipegTech, uOfW]
 const employment = [odns, peer1, wardrop]
 
