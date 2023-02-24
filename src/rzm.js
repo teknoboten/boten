@@ -4,12 +4,22 @@ const about = [
   'Coworkers and clients have described me as patient, hard-working, clever and “pleasant to work with, as long as you don’t mind the literal LOL-ing coming from her desk”.',
 ]
 
+const catchEmAll = {
+  title: 'Catch Em All!',
+  github: 'https://github.com/teknoboten/catch-em-all',
+  url: 'https://github.com/teknoboten/catch-em-all',
+  description:
+    'Simple responsive React front end and Express REST API. Added Docker containers for both server and client.',
+  tags: ['Express', 'Docker', 'Material UI', 'Styled Components', 'React']
+}
+
+
 const squamishGreenlaw = {
   title: 'Squamishgreenlaw.ca',
   github: 'https://github.com/teknoboten/SquamishGreenlaw',
   url: 'https://www.squamishgreenlaw.ca/',
   description:
-    'Single page app built with “artisanal” HTML, CSS, Javascript, and a dash of Bootstrap. Set up continuous deployment using Netlify / GitHub and used Stripe’s API for managing donations.',
+    'Single page app built with “artisanal” HTML, CSS, Javascript, and a dash of Bootstrap. Probably not going to do that again. 🙅🏻‍♀️ Set up continuous deployment using Netlify / GitHub and used Stripe’s API for managing donations.',
   tags: ['HTML', 'CSS', 'Javascript', 'Bootstrap', 'Netlify', 'Github'],
 }
 
@@ -27,7 +37,7 @@ const fetchDogs = {
   github: 'https://github.com/teknoboten/fetchDogs',
   url: 'https://sparkling-macaron-10cdb5.netlify.app/',
   description:
-    'A silly app I made while teaching myself Redux, MaterialUI and ReactDND',
+    'A silly app I made while teaching myself Redux, MaterialUI and ReactDND. ',
   tags: ['React', 'Redux', 'UX'],
 }
 
@@ -61,9 +71,9 @@ const uOfW = {
 const skills = {
   languages: 'Javascript, CSS, HTML, SQL, Ruby',
   frameworks:
-    'NodeJS, ReactJS, MaterialUI, Express, EJS, Bootstrap, framer-motion, SASS, jQuery, styled components',
+    'NodeJS, NextJS, ReactJS, MaterialUI, Express, EJS, Bootstrap, framer-motion, SASS, jQuery, styled components',
   toolbox:
-    'Git, DNS, Chai, Jest, Firebase, Netlify, Heroku, Mailgun, Mapbox, Postman, Postgres, MongoDB',
+    'Git, Docker, DNS, Chai, Jest, Firebase, Netlify, Heroku, Mailgun, Mapbox, Postman, Postgres, MongoDB',
 }
 
 const odns = {
@@ -94,7 +104,7 @@ const wardrop = {
   years: '2009 - 2012',
 }
 
-const recentProjects = [squamishGreenlaw, tripster, fetchDogs, decisionWizard]
+const recentProjects = [catchEmAll, squamishGreenlaw, tripster, fetchDogs, decisionWizard]
 const education = [lightHouseLabs, winnipegTech, uOfW]
 const employment = [odns, peer1, wardrop]
 
