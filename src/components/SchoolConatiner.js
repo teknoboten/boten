@@ -8,12 +8,12 @@ import School from './School.js'
 
 export default function SchoolContainer() {
   return (
-    <Box sx={{ bgcolor: '#fce4ec', marginY: 2 }}>
+    <Box sx={{ bgcolor: 'rgba(252, 228, 236, 0.3)', marginY: 2 }}>
       <Typography
         variant="h2"
         sx={{
           color: 'white',
-          fontFamily: 'Space Mono, monospace',
+          fontFamily: 'Silkscreen',
           opacity: '.5',
         }}
       >

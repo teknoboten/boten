@@ -9,7 +9,7 @@ export default function ProjectsContainer() {
     <Grid
       container
       spacing={0}
-      sx={{ bgcolor: '#84ffff', marginY: 2 }}
+      sx={{ bgcolor: 'rgba(132, 255, 255, 0.3)', marginY: 2 }}
       justifyContent="center"
     >
       <Grid item xs={12}>
@@ -17,7 +17,7 @@ export default function ProjectsContainer() {
           variant="h2"
           sx={{
             color: 'white',
-            fontFamily: 'Space Mono, monospace',
+            fontFamily: 'Silkscreen',
             opacity: '.5',
           }}
         >

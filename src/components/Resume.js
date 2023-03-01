@@ -8,7 +8,7 @@ import Footer from './Footer'
 
 function Resume() {
   return (
-    <Container>
+    <Container >
       <Summary />
       <Skills />
       <ProjectsContainer />

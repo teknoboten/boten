@@ -8,12 +8,12 @@ import Jorb from './Jorb.js'
 
 export default function JorbsContainer() {
   return (
-    <Box sx={{ bgcolor: '#f0f4c3', marginY: 2 }}>
+    <Box sx={{ bgcolor: 'rgba(240, 244, 195, 0.3)', marginY: 2 }}>
       <Typography
         variant="h2"
         sx={{
           color: 'white',
-          fontFamily: 'Space Mono, monospace',
+          fontFamily: 'Silkscreen',
           opacity: '.5',
         }}
       >
