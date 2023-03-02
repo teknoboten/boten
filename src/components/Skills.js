@@ -9,10 +9,9 @@ export default function Skills() {
       spacing={0} 
       sx={{  paddingX: '5%', paddingBottom: 6, bgcolor: 'rgba(167, 255, 235, 0.3)', marginY: 2 }}>
 
-
       <Grid item xs={12} >
         <Typography
-          variant="h1"
+          variant="h2"
           sx={{
             color: 'white',
             fontFamily: 'Silkscreen',
@@ -23,8 +22,6 @@ export default function Skills() {
         </Typography>
       </Grid>
 
-      {/* <Grid container spacing={3} padding={2}> */}
-        {/* <Grid item xs={12} sm={4}>   */}
         <Grid item xs={12} sm={8} paddingY={2} sx={{ marginX: 'auto' }}>
           <Typography variant="h5" fontFamily={'Silkscreen'}>
             Languages: 
@@ -58,31 +55,6 @@ export default function Skills() {
         </Grid>
 
 
-
-
-
-
-
-
-
-        {/* <Grid item xs={12} sm={4}>
-          <Typography variant="h6" gutterBottom>
-            Libraries & Frameworks
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {skills.frameworks}
-          </Typography>
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Typography variant="h6" gutterBottom>
-            Toolbox
-          </Typography>
-
-          <Typography variant="body2" color="text.secondary">
-            {skills.toolbox}
-          </Typography>
-        </Grid> */}
       </Grid>
-    // </Grid>
   )
 }

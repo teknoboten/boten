@@ -25,10 +25,14 @@ export default function Summary() {
         <Grid item xs={12} sm={8} paddingBottom={6} sx={{ marginX: 'auto' }}>
           <Typography variant="h5" sx={{ fontFamily: 'Inconsolata'}}>
             <p>
+            I love building with React & Express, but I am always teaching myself something new Lately that's been Typescript, NextJS and how to Docker. 
+            </p>
+            <p>
               My super powers include creative thinking, determination, and bug
               hunting (technical / bitey). I am passionate about learning,
               problem solving, iterative optimization, and snacks.
             </p>
+
             <p>
               Coworkers and clients have described me as patient, hard-working,
               clever and{' '}
@@ -46,8 +50,7 @@ export default function Summary() {
             </p>
 
             <p>
-              Lately, I have been focussed on building things with React, but am
-              always interested in collaborating. If you'd like to chat, please
+              These days I prefer writing code to social media, so if you'd like to chat, please
               <Link
                 href="mailto:serra@boten.ca"
                 rel="noreferrer"

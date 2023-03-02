@@ -9,8 +9,7 @@ export default function ProjectsContainer() {
     <Grid
       container
       spacing={0}
-      sx={{ bgcolor: 'rgba(132, 255, 255, 0.3)', marginY: 2 }}
-      justifyContent="center"
+      sx={{ paddingX: '5%', paddingBottom: 6, bgcolor: 'rgba(132, 255, 255, 0.3)', marginY: 2 }}
     >
       <Grid item xs={12}>
         <Typography
@@ -18,7 +17,7 @@ export default function ProjectsContainer() {
           sx={{
             color: 'white',
             fontFamily: 'Silkscreen',
-            opacity: '.5',
+            opacity: '.2',
           }}
         >
           Recent Projects
@@ -26,7 +25,7 @@ export default function ProjectsContainer() {
       </Grid>
 
       {recentProjects.map((project) => (
-        <Grid item padding={2} xs={12} sm={4} key={project.title}>
+        <Grid item padding={2} lg={6} key={project.title}>
           <Project
             title={project.title}
             description={project.description}
