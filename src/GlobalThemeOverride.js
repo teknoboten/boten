@@ -2,6 +2,22 @@ import { createTheme } from '@mui/material/styles'
 
 export const GlobalThemeOverride = createTheme({
   components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: '#F5DFFB',
+          textDecoration: 'none',
+          fontWeight: '500',
+          backgroundColor: 'rgba(209, 70, 205, 0.0)',
+
+          '&:hover': {
+            boxShadow: 9,
+            backgroundColor: 'rgba(209, 70, 205, 0.4)',
+            transition: 'backgroundColor, 500ms',
+          },
+        },
+      },
+    },
     MuiTypography: {
       styleOverrides: {
         h1: {

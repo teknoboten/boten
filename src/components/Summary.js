@@ -42,8 +42,8 @@ export default function Summary() {
                 href="https://www.linkedin.com/in/serraboten/details/recommendations/"
                 rel="noreferrer"
                 target="_blank"
-                color="#ec407a"
-                sx={{ textDecoration: 'none', fontWeight: '500' }}
+                // color="#ec407a"
+                // sx={{ textDecoration: 'none', fontWeight: '500' }}
               >
                 {' '}
                 “pleasant to work with, as long as you don’t mind the literal
@@ -53,15 +53,12 @@ export default function Summary() {
 
             <p>
               These days I prefer writing code to social media, so if you'd like
-              to chat, please
+              to chat, please{' '}
               <Link
                 href="mailto:serra@boten.ca"
                 rel="noreferrer"
                 target="_blank"
-                color="#ec407a"
-                sx={{ textDecoration: 'none', fontWeight: '500' }}
               >
-                {' '}
                 send me an email.
               </Link>{' '}
               I'd love to hear from you!
