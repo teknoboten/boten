@@ -5,12 +5,19 @@ import Typography from '@mui/material/Typography'
 export default function School({ school, program, year }) {
   return (
     <Box padding={2}>
-      <Typography variant="h6">{program}</Typography>
-      <Typography variant="body1" gutterBottom>
+      <Typography variant="h5" fontFamily={'Silkscreen'}>
+        {program}
+      </Typography>
+      <Typography variant="h6" fontFamily={'Inconsolata'}>
         {school}
       </Typography>
 
-      <Typography variant="caption">{year}</Typography>
+      <Typography
+        variant="caption"
+        sx={{ fontFamily: 'Silkscreen', fontWeight: '500' }}
+      >
+        {year}
+      </Typography>
     </Box>
   )
 }
