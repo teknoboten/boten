@@ -8,26 +8,22 @@ import Jorb from './Jorb.js'
 
 export default function JorbsContainer() {
   return (
-
-<Grid container 
-      spacing={0} 
-      sx={{  paddingX: '5%', paddingBottom: 6, bgcolor: 'rgba(167, 255, 235, 0.3)', marginY: 2 }}>
-  <Grid item>
+    <Box sx={{ bgcolor: '#f0f4c3', marginY: 2 }}>
       <Typography
         variant="h2"
         sx={{
           color: 'white',
-          fontFamily: 'Silkscreen',
-          opacity: '.2',
+          fontFamily: 'Space Mono, monospace',
+          opacity: '.5',
         }}
       >
         Employment History
       </Typography>
-      </Grid>
-
+      <Grid container spacing={3}>
         {employment.map((jorb) => (
-          <Grid item xs={12} sm={8} key={jorb.title} sx={{ marginX: 'auto' }}>
+          <Grid item xs={12} sm={4} key={jorb.title}>
             <Jorb
+              // key={jorb.company}s
               company={jorb.company}
               position={jorb.position}
               description={jorb.description}
@@ -36,5 +32,6 @@ export default function JorbsContainer() {
           </Grid>
         ))}
       </Grid>
+    </Box>
   )
 }

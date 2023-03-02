@@ -5,56 +5,48 @@ import { skills } from '../rzm.js'
 
 export default function Skills() {
   return (
-    <Grid container 
-      spacing={0} 
-      sx={{  paddingX: '5%', paddingBottom: 6, bgcolor: 'rgba(167, 255, 235, 0.3)', marginY: 2 }}>
-
-      <Grid item xs={12} >
+    <Grid container spacing={0} sx={{ bgcolor: '#a7ffeb', marginY: 2 }}>
+      <Grid item xs={12}>
         <Typography
           variant="h2"
           sx={{
             color: 'white',
-            fontFamily: 'Silkscreen',
-            opacity: '.2',
+            fontFamily: 'Space Mono, monospace',
+            opacity: '.5',
           }}
         >
           Skillz
         </Typography>
       </Grid>
 
-        <Grid item xs={12} sm={8} paddingY={2} sx={{ marginX: 'auto' }}>
-          <Typography variant="h5" fontFamily={'Silkscreen'}>
-            Languages: 
+      <Grid container spacing={3} padding={2}>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h6" gutterBottom>
+            Languages
           </Typography>
 
-          <Typography variant="h5" paddingX={2} fontFamily={'Inconsolata'}>
-          {skills.languages}
-          </Typography>
-        </Grid>
-
-
-        <Grid item xs={12} sm={8} paddingY={2} sx={{ marginX: 'auto' }}>
-          <Typography variant="h5" fontFamily={'Silkscreen'}>
-          Libraries & Frameworks: 
-          </Typography>
-
-          <Typography variant="h5" paddingX={2} fontFamily={'Inconsolata'}>
-          {skills.frameworks}
+          <Typography variant="body2" color="text.secondary">
+            {skills.languages}
           </Typography>
         </Grid>
-
-
-        <Grid item xs={12} sm={8} paddingY={2} sx={{ marginX: 'auto' }}>
-          <Typography variant="h5" fontFamily={'Silkscreen'}>
-         Ops Toolbox: 
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h6" gutterBottom>
+            Libraries & Frameworks
           </Typography>
-
-          <Typography variant="h5" paddingX={2} fontFamily={'Inconsolata'}>
-          {skills.toolbox}
+          <Typography variant="body2" color="text.secondary">
+            {skills.frameworks}
           </Typography>
         </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h6" gutterBottom>
+            Toolbox
+          </Typography>
 
-
+          <Typography variant="body2" color="text.secondary">
+            {skills.toolbox}
+          </Typography>
+        </Grid>
       </Grid>
+    </Grid>
   )
 }

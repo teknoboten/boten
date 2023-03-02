@@ -10,11 +10,11 @@ export default function Project({ title, description, url, tags, github }) {
         height: '100%',
       }}
     >
-      <Typography variant="h5" fontFamily={'Silkscreen'}>
+      <Typography gutterBottom variant="h6">
         {title}
       </Typography>
 
-      <Typography variant="h6" padding={2} fontFamily={'Inconsolata'}>
+      <Typography variant="body2" color="text.secondary" marginBottom={2}>
         {description}
       </Typography>
       <Box marginBottom={0}>
@@ -27,31 +27,28 @@ export default function Project({ title, description, url, tags, github }) {
             sx={{
               textDecoration: 'none',
               marginRight: 2,
-              color: 'black',
-              bgcolor: 'rgba(169, 243, 255, 0.0)',
+              bgcolor: 'rgba(255,255,255, 0.5)',
               paddingX: '6px',
               paddingY: '3px',
-              border: '2px solid rgba(47, 109, 127, 0.5)'
             }}
           >
-            <Typography variant="caption" sx={{ fontFamily: 'Silkscreen', fontWeight: '500'}}>View</Typography>
+            <Typography variant="caption">View</Typography>
           </Link>
         )}
         <Link
           href={github}
           rel="noreferrer"
           target="_blank"
+          color="#ff4081"
           sx={{
             textDecoration: 'none',
             marginRight: 2,
-            color: 'black',
-            bgcolor: 'rgba(169, 243, 255, 0.0)',
+            bgcolor: 'rgba(255,255,255, 0.5)',
             paddingX: '6px',
             paddingY: '3px',
-            border: '2px solid rgba(47, 109, 127, 0.5)'
           }}
         >
-          <Typography variant="caption" sx={{ fontFamily: 'Silkscreen', fontWeight: '500'}} >Github</Typography>
+          <Typography variant="caption">Github</Typography>
         </Link>
       </Box>
     </Box>
