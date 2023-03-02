@@ -1,5 +1,4 @@
 import React from 'react'
-import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 
@@ -8,30 +7,39 @@ import Jorb from './Jorb.js'
 
 export default function JorbsContainer() {
   return (
-    <Box sx={{ bgcolor: '#f0f4c3', marginY: 2 }}>
-      <Typography
-        variant="h2"
-        sx={{
-          color: 'white',
-          fontFamily: 'Space Mono, monospace',
-          opacity: '.5',
-        }}
-      >
-        Employment History
-      </Typography>
-      <Grid container spacing={3}>
-        {employment.map((jorb) => (
-          <Grid item xs={12} sm={4} key={jorb.title}>
-            <Jorb
-              // key={jorb.company}s
-              company={jorb.company}
-              position={jorb.position}
-              description={jorb.description}
-              years={jorb.years}
-            />
-          </Grid>
-        ))}
+    <Grid
+      container
+      spacing={0}
+      sx={{
+        paddingX: '5%',
+        paddingBottom: 6,
+        bgcolor: 'rgba(167, 255, 235, 0.3)',
+        marginY: 2,
+      }}
+    >
+      <Grid item>
+        <Typography
+          variant="h2"
+          sx={{
+            color: 'white',
+            fontFamily: 'Silkscreen',
+            opacity: '.2',
+          }}
+        >
+          Employment History
+        </Typography>
       </Grid>
-    </Box>
+
+      {employment.map((jorb) => (
+        <Grid item xs={12} sm={8} key={jorb.title} sx={{ marginX: 'auto' }}>
+          <Jorb
+            company={jorb.company}
+            position={jorb.position}
+            description={jorb.description}
+            years={jorb.years}
+          />
+        </Grid>
+      ))}
+    </Grid>
   )
 }

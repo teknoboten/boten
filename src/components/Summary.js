@@ -40,8 +40,15 @@ export default function Summary() {
                 href="https://www.linkedin.com/in/serraboten/details/recommendations/"
                 rel="noreferrer"
                 target="_blank"
-                color="#ec407a"
-                sx={{ textDecoration: 'none', fontWeight: '500' }}
+                sx={{
+                  '&:hover': {
+                    boxShadow: 4,
+                    fontFamily: 'Silkscreen',
+                    textDecoration: 'underline',
+                  },
+                  color: 'rgb(255, 235, 245)',
+                  textDecoration: 'none',
+                }}
               >
                 {' '}
                 “pleasant to work with, as long as you don’t mind the literal
@@ -50,19 +57,26 @@ export default function Summary() {
             </p>
 
             <p>
-              Lately, I have been focussed on building things with React, but am
-              always interested in collaborating. If you'd like to chat, please
+              I've mostly abandoned social media for now, but you can
               <Link
                 href="mailto:serra@boten.ca"
                 rel="noreferrer"
                 target="_blank"
                 color="#ec407a"
-                sx={{ textDecoration: 'none', fontWeight: '500' }}
+                sx={{
+                  '&:hover': {
+                    boxShadow: 4,
+                    fontFamily: 'Silkscreen',
+                    textDecoration: 'underline',
+                  },
+                  color: 'rgb(255, 235, 245)',
+                  textDecoration: 'none',
+                }}
               >
                 {' '}
-                send me an email.
+                send me an email
               </Link>{' '}
-              I'd love to hear from you!
+              if you'd like to chat!
             </p>
           </Typography>
         </Grid>
