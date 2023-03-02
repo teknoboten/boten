@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { ThemeProvider } from '@mui/material/styles'
+import { GlobalThemeOverride } from './GlobalThemeOverride'
 import App from './App'
 import ErrorPage from './routes/Error'
 import Resume from './components/Resume'
-import { ThemeProvider } from '@mui/material/styles'
-import { GlobalThemeOverride } from './GlobalThemeOverride'
-
-// import './index.css'
+import './index.css'
 
 const router = createBrowserRouter([
   {

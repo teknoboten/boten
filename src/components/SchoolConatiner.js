@@ -16,16 +16,7 @@ export default function SchoolContainer() {
       }}
     >
       {' '}
-      <Typography
-        variant="h2"
-        sx={{
-          color: 'white',
-          fontFamily: 'Silkscreen',
-          opacity: '.5',
-        }}
-      >
-        Education
-      </Typography>
+      <Typography variant="h2">Education</Typography>
       <Grid container spacing={0}>
         {education.map((school) => (
           <Grid item xs={12} sm={8} sx={{ marginX: 'auto' }} key={school.title}>

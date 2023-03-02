@@ -15,15 +15,15 @@ export default function Summary() {
       }}
     >
       <Grid container xs={12} sm={10}>
-        <Typography variant="h2">Hi! My name is Serra.</Typography>
-        <Typography variant="h5" marginY={4} sx={{ fontFamily: 'Silkscreen' }}>
-          I am a full-stack developer living in the pacific northwest.
+        <Typography variant="h1">Hi! My name is Serra.</Typography>
+        <Typography variant="h5" marginY={3}>
+          I'm a Full-stack developer living in the pacific northwest.
         </Typography>
       </Grid>
 
       <Grid container xs={12} paddingTop={4} paddingBottom={6} paddingX={4}>
         <Grid item xs={12} sm={8} paddingBottom={6} sx={{ marginX: 'auto' }}>
-          <Typography variant="h5" sx={{ fontFamily: 'Inconsolata' }}>
+          <Typography variant="h6">
             <p>
               I love building with React & Express, but I am always teaching
               myself something new Lately that's been Typescript, NextJS and how

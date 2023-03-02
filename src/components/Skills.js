@@ -20,7 +20,6 @@ export default function Skills() {
           variant="h2"
           sx={{
             color: 'white',
-            fontFamily: 'Silkscreen',
             opacity: '.2',
           }}
         >
@@ -29,31 +28,25 @@ export default function Skills() {
       </Grid>
 
       <Grid item xs={12} sm={8} paddingY={2} sx={{ marginX: 'auto' }}>
-        <Typography variant="h5" fontFamily={'Silkscreen'}>
-          Languages:
-        </Typography>
+        <Typography variant="h5">Languages:</Typography>
 
-        <Typography variant="h5" paddingX={2} fontFamily={'Inconsolata'}>
+        <Typography variant="h6" paddingX={2}>
           {skills.languages}
         </Typography>
       </Grid>
 
       <Grid item xs={12} sm={8} paddingY={2} sx={{ marginX: 'auto' }}>
-        <Typography variant="h5" fontFamily={'Silkscreen'}>
-          Libraries & Frameworks:
-        </Typography>
+        <Typography variant="h5">Libraries & Frameworks:</Typography>
 
-        <Typography variant="h5" paddingX={2} fontFamily={'Inconsolata'}>
+        <Typography variant="h6" paddingX={2}>
           {skills.frameworks}
         </Typography>
       </Grid>
 
       <Grid item xs={12} sm={8} paddingY={2} sx={{ marginX: 'auto' }}>
-        <Typography variant="h5" fontFamily={'Silkscreen'}>
-          Ops Toolbox:
-        </Typography>
+        <Typography variant="h5">Ops Toolbox:</Typography>
 
-        <Typography variant="h5" paddingX={2} fontFamily={'Inconsolata'}>
+        <Typography variant="h6" paddingX={2}>
           {skills.toolbox}
         </Typography>
       </Grid>
