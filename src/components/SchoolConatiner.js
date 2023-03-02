@@ -1,27 +1,27 @@
 import React from 'react'
+import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
+
 import { education } from '../rzm.js'
 import School from './School.js'
 
 export default function SchoolContainer() {
   return (
-    <Grid
-    container
-    sx={{ paddingX: '5%', paddingBottom: 6, bgcolor: 'rgba(252, 228, 236, 0.3)', marginY: 2 }}
->      <Typography
+    <Box sx={{ bgcolor: '#fce4ec', marginY: 2 }}>
+      <Typography
         variant="h2"
         sx={{
           color: 'white',
-          fontFamily: 'Silkscreen',
+          fontFamily: 'Space Mono, monospace',
           opacity: '.5',
         }}
       >
         Education
       </Typography>
-      <Grid container spacing={0}>
+      <Grid container spacing={3}>
         {education.map((school) => (
-          <Grid item xs={12} sm={8}  sx={{ marginX: 'auto' }} key={school.title}>
+          <Grid item xs={12} sm={4} key={school.title}>
             <School
               school={school.school}
               program={school.program}
@@ -30,6 +30,6 @@ export default function SchoolContainer() {
           </Grid>
         ))}
       </Grid>
-      </Grid>
+    </Box>
   )
 }
