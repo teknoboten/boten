@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Console from './components/Console'
-// import './App.css'
 
 function App() {
   return (

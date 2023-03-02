@@ -15,9 +15,7 @@ export default function Summary() {
       }}
     >
       <Grid container xs={12} sm={10}>
-        <Typography variant="h2" sx={{ fontFamily: 'Silkscreen' }}>
-          Hi! My name is Serra.
-        </Typography>
+        <Typography variant="h2">Hi! My name is Serra.</Typography>
         <Typography variant="h5" marginY={4} sx={{ fontFamily: 'Silkscreen' }}>
           I am a full-stack developer living in the pacific northwest.
         </Typography>
