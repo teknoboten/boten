@@ -11,10 +11,10 @@ export default function Footer() {
       paddingBottom={4}
       sx={{ justifyContent: 'space-between' }}
     >
-      <Typography variant="caption">
+      <Typography variant="h5" sx={{ fontFamily: 'Silkscreen', fontWeight: '500'}}>
         Code written with {'<3'} and <a href="https://reactjs.org/">ReactJS</a>
       </Typography>
-      <Typography variant="caption">
+      <Typography variant="h5" sx={{ fontFamily: 'Silkscreen', fontWeight: '500'}}>
         © {new Date().getFullYear()} Serra Boten
       </Typography>
     </Grid>

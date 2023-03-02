@@ -5,15 +5,15 @@ import Typography from '@mui/material/Typography'
 export default function Jorb({ company, position, description, years }) {
   return (
     <Box padding={2}>
-      <Typography variant="h6">{position}</Typography>
-      <Typography variant="body1" gutterBottom>
+      <Typography variant="h5" fontFamily={'Silkscreen'}>{position}</Typography>
+      <Typography variant="h6" marginBottom={1} fontFamily={'Inconsolata'}>
         {company}
       </Typography>
 
-      <Typography variant="body2" color="text.secondary" marginBottom={2}>
+      <Typography variant="h6" fontFamily={'Inconsolata'} color="text.secondary" marginBottom={2}>
         {description}
       </Typography>
-      <Typography variant="caption">{years}</Typography>
+      <Typography variant="caption" sx={{ fontFamily: 'Silkscreen', fontWeight: '500'}}>{years}</Typography>
     </Box>
   )
 }
