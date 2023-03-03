@@ -6,11 +6,11 @@ export default function Jorb({ company, position, description, years }) {
   return (
     <Box padding={2}>
       <Typography variant="h5">{position}</Typography>
-      <Typography variant="h6" marginBottom={1}>
+      <Typography variant="h6" padding={1}>
         {company}
       </Typography>
 
-      <Typography variant="h6" color="text.secondary" marginBottom={2}>
+      <Typography variant="h6" padding={1} color="text.secondary">
         {description}
       </Typography>
       <Typography variant="caption">{years}</Typography>

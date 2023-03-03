@@ -7,22 +7,31 @@ export default function Summary() {
   return (
     <Grid
       container
+      variant="summary"
       spacing={0}
       sx={{
-        paddingX: '5%',
+        // paddingX: '5%',
         paddingTop: '20%',
         bgcolor: 'rgba(216, 241, 248, 0.2)',
       }}
     >
-      <Grid container xs={12} sm={10}>
+      <Grid container>
         <Typography variant="h1">Hi! My name is Serra.</Typography>
         <Typography variant="h5" marginY={3}>
           I'm a Full-stack developer living in the pacific northwest.
         </Typography>
       </Grid>
 
-      <Grid container xs={12} paddingTop={4} paddingBottom={6} paddingX={4}>
-        <Grid item xs={12} sm={8} paddingBottom={6} sx={{ marginX: 'auto' }}>
+      <Grid container paddingTop={4} paddingBottom={6} paddingX={4}>
+        <Grid
+          item
+          sm={12}
+          md={10}
+          lg={8}
+          paddingBottom={6}
+          // sx={{ marginX: 'auto' }}
+          sx={{ marginX: 'auto' }}
+        >
           <Typography variant="h6">
             <p>
               I love building with React & Express, but I am always teaching

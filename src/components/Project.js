@@ -8,11 +8,10 @@ export default function Project({ title, description, url, tags, github }) {
     <Box
       sx={{
         height: '100%',
+        padding: 2,
       }}
     >
-      <Typography variant="h5" fontFamily={'Silkscreen'}>
-        {title}
-      </Typography>
+      <Typography variant="h5">{title}</Typography>
 
       <Typography variant="h6" padding={2} fontFamily={'Inconsolata'}>
         {description}

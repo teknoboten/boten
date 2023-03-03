@@ -27,7 +27,7 @@ export default function Skills() {
         </Typography>
       </Grid>
 
-      <Grid item xs={12} sm={8} paddingY={2} sx={{ marginX: 'auto' }}>
+      <Grid item lg={10} sx={{ padding: 2 }}>
         <Typography variant="h5">Languages:</Typography>
 
         <Typography variant="h6" paddingX={2}>
@@ -35,7 +35,7 @@ export default function Skills() {
         </Typography>
       </Grid>
 
-      <Grid item xs={12} sm={8} paddingY={2} sx={{ marginX: 'auto' }}>
+      <Grid item lg={10} sx={{ padding: 2 }}>
         <Typography variant="h5">Libraries & Frameworks:</Typography>
 
         <Typography variant="h6" paddingX={2}>
@@ -43,7 +43,7 @@ export default function Skills() {
         </Typography>
       </Grid>
 
-      <Grid item xs={12} sm={8} paddingY={2} sx={{ marginX: 'auto' }}>
+      <Grid item lg={10} sx={{ padding: 2 }}>
         <Typography variant="h5">Ops Toolbox:</Typography>
 
         <Typography variant="h6" paddingX={2}>

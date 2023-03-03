@@ -18,11 +18,11 @@ export default function JorbsContainer() {
       }}
     >
       <Grid item>
-        <Typography variant="h2">Employment History</Typography>
+        <Typography variant="h2">Work History</Typography>
       </Grid>
 
       {employment.map((jorb) => (
-        <Grid item xs={12} sm={8} key={jorb.title} sx={{ marginX: 'auto' }}>
+        <Grid item lg={12} key={jorb.title} sx={{ padding: 2 }}>
           <Jorb
             company={jorb.company}
             position={jorb.position}
