@@ -38,7 +38,6 @@ export default function Project({ title, description, url, tags, github }) {
           rel="noreferrer"
           target="_blank"
           sx={{
-            textDecoration: 'none',
             marginRight: 2,
             bgcolor: 'rgba(169, 243, 255, 0.2)',
             paddingX: '6px',

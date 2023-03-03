@@ -1,6 +1,6 @@
-// import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
+import Link from '@mui/material/Link'
 
 export default function Footer() {
   return (
@@ -11,16 +11,13 @@ export default function Footer() {
       paddingBottom={4}
       sx={{ justifyContent: 'space-between' }}
     >
-      <Typography
-        variant="h5"
-        sx={{ fontFamily: 'Silkscreen', fontWeight: '500' }}
-      >
-        Code written with {'<3'} and <a href="https://reactjs.org/">ReactJS</a>
+      <Typography variant="h5" sx={{ fontWeight: '500' }}>
+        Coded with {'<3'} and{' '}
+        <Link rel="noreferrer" target="_blank" href={'https://reactjs.org/'}>
+          ReactJS
+        </Link>
       </Typography>
-      <Typography
-        variant="h5"
-        sx={{ fontFamily: 'Silkscreen', fontWeight: '500' }}
-      >
+      <Typography variant="h5" sx={{ fontWeight: '500' }}>
         © {new Date().getFullYear()} Serra Boten
       </Typography>
     </Grid>

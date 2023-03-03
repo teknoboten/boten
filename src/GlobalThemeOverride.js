@@ -34,6 +34,7 @@ export const GlobalThemeOverride = createTheme({
         },
         h5: {
           fontFamily: 'Silkscreen',
+          textDecoration: 'none',
         },
         h6: {
           fontFamily: 'Inconsolata',

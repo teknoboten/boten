@@ -21,3 +21,9 @@ font-family: 'Silkscreen', cursive;
 }
 
  */
+
+.blinker {
+  min-width: 10px;
+  min-height: 20px;
+  color: '#ec407a';
+}
