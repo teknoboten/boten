@@ -23,23 +23,14 @@ export default function Project({ title, description, url, tags, github }) {
             href={url}
             rel="noreferrer"
             target="_blank"
-            color="#ff4081"
             sx={{
-              textDecoration: 'none',
               marginRight: 2,
-              color: 'black',
-              bgcolor: 'rgba(169, 243, 255, 0.0)',
+              bgcolor: 'rgba(169, 243, 255, 0.2)',
               paddingX: '6px',
               paddingY: '3px',
-              border: '2px solid rgba(47, 109, 127, 0.5)',
             }}
           >
-            <Typography
-              variant="caption"
-              sx={{ fontFamily: 'Silkscreen', fontWeight: '500' }}
-            >
-              View
-            </Typography>
+            <Typography variant="caption">View</Typography>
           </Link>
         )}
         <Link
@@ -47,21 +38,13 @@ export default function Project({ title, description, url, tags, github }) {
           rel="noreferrer"
           target="_blank"
           sx={{
-            textDecoration: 'none',
             marginRight: 2,
-            color: 'black',
-            bgcolor: 'rgba(169, 243, 255, 0.0)',
+            bgcolor: 'rgba(169, 243, 255, 0.2)',
             paddingX: '6px',
             paddingY: '3px',
-            border: '2px solid rgba(47, 109, 127, 0.5)',
           }}
         >
-          <Typography
-            variant="caption"
-            sx={{ fontFamily: 'Silkscreen', fontWeight: '500' }}
-          >
-            Github
-          </Typography>
+          <Typography variant="caption">Github</Typography>
         </Link>
       </Box>
     </Box>

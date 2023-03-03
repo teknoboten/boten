@@ -15,17 +15,15 @@ export default function Summary() {
       }}
     >
       <Grid container xs={12} sm={10}>
-        <Typography variant="h2" sx={{ fontFamily: 'Silkscreen' }}>
-          Hi! My name is Serra.
-        </Typography>
-        <Typography variant="h5" marginY={4} sx={{ fontFamily: 'Silkscreen' }}>
-          I am a full-stack developer living in the pacific northwest.
+        <Typography variant="h1">Hi! My name is Serra.</Typography>
+        <Typography variant="h5" marginY={3}>
+          I'm a Full-stack developer living in the pacific northwest.
         </Typography>
       </Grid>
 
       <Grid container xs={12} paddingTop={4} paddingBottom={6} paddingX={4}>
         <Grid item xs={12} sm={8} paddingBottom={6} sx={{ marginX: 'auto' }}>
-          <Typography variant="h5" sx={{ fontFamily: 'Inconsolata' }}>
+          <Typography variant="h6">
             <p>
               I love building with React & Express, but I am always teaching
               myself something new Lately that's been Typescript, NextJS and how
@@ -44,8 +42,8 @@ export default function Summary() {
                 href="https://www.linkedin.com/in/serraboten/details/recommendations/"
                 rel="noreferrer"
                 target="_blank"
-                color="#ec407a"
-                sx={{ textDecoration: 'none', fontWeight: '500' }}
+                // color="#ec407a"
+                // sx={{ textDecoration: 'none', fontWeight: '500' }}
               >
                 {' '}
                 “pleasant to work with, as long as you don’t mind the literal
@@ -55,15 +53,12 @@ export default function Summary() {
 
             <p>
               These days I prefer writing code to social media, so if you'd like
-              to chat, please
+              to chat, please{' '}
               <Link
                 href="mailto:serra@boten.ca"
                 rel="noreferrer"
                 target="_blank"
-                color="#ec407a"
-                sx={{ textDecoration: 'none', fontWeight: '500' }}
               >
-                {' '}
                 send me an email.
               </Link>{' '}
               I'd love to hear from you!

@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { ThemeProvider } from '@mui/material/styles'
+import { GlobalThemeOverride } from './GlobalThemeOverride'
 import App from './App'
 import ErrorPage from './routes/Error'
 import Resume from './components/Resume'
@@ -20,6 +22,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider theme={GlobalThemeOverride}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 )

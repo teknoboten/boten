@@ -3,26 +3,30 @@ import { Link } from 'react-router-dom'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Console from './components/Console'
-// import './App.css'
+// import './index.css'
 
 function App() {
   return (
     <Container>
       <Console></Console>
 
-      <Link to={'resume'} sx={{ color: '#ffffff' }}>
+      <Link to={'resume'}>
         <Typography
-          variant="subtitle1"
-          color="#000000"
+          variant="h1"
           component="span"
           sx={{
+            color: '#F5DFFB',
             textDecoration: 'none',
-            fontFamily: 'Space Mono, monospace',
             fontWeight: '500',
-            width: '10vw',
+            backgroundColor: 'rgba(209, 70, 205, 0.0)',
+            '&:hover': {
+              boxShadow: 9,
+              backgroundColor: 'rgba(209, 70, 205, 0.4)',
+              transition: 'backgroundColor, 500ms',
+            },
           }}
         >
-          view resume
+          View Resume
         </Typography>
       </Link>
     </Container>

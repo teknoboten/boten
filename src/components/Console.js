@@ -75,14 +75,19 @@ const Console = () => {
         width: '50vw',
         height: '40vh',
         padding: '10px',
-        fontFamily: 'Fira Code',
+        fontFamily: 'Silkscreen',
         color: '#ec407a',
       }}
     >
-      <Typography variant="h4" color="#ec407a" fontFamily="Fira Code">
+      <Typography variant="h5" color="#ec407a" fontFamily="Silkscreen">
         serra@internetz#
         {typing ? (
-          <motion.h5 variants={sentence} initial="hidden" animate="visible">
+          <motion.h5
+            variants={sentence}
+            initial="hidden"
+            animate="visible"
+            fontFamily="Silkscreen"
+          >
             {hello.map((char, index) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>

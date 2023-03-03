@@ -18,16 +18,7 @@ export default function JorbsContainer() {
       }}
     >
       <Grid item>
-        <Typography
-          variant="h2"
-          sx={{
-            color: 'white',
-            fontFamily: 'Silkscreen',
-            opacity: '.2',
-          }}
-        >
-          Employment History
-        </Typography>
+        <Typography variant="h2">Employment History</Typography>
       </Grid>
 
       {employment.map((jorb) => (
