@@ -18,6 +18,17 @@ export const GlobalThemeOverride = createTheme({
         },
       },
     },
+    MuiGrid: {
+      variants: [
+        {
+          props: { variant: 'summary' },
+          style: {
+            // border: '2px solid black',
+            padding: '5%',
+          },
+        },
+      ],
+    },
     MuiTypography: {
       styleOverrides: {
         h1: {
@@ -51,3 +62,9 @@ export const GlobalThemeOverride = createTheme({
     },
   },
 })
+
+// MuiGrid: {
+//     defaultProps: {
+//       md: 1,
+//     },
+//   },

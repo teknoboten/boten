@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
+import Grid from '@mui/material/Grid'
 import { motion } from 'framer-motion'
 
 const Console = () => {
@@ -67,53 +67,57 @@ const Console = () => {
   // }
 
   return (
-    <Box
-      onClick={sayHello}
-      sx={{
-        marginTop: '30vh',
-        bgcolor: 'white',
-        width: '50vw',
-        height: '40vh',
-        padding: '10px',
-        fontFamily: 'Silkscreen',
-        color: '#ec407a',
-      }}
-    >
-      <Typography variant="h5" color="#ec407a" fontFamily="Silkscreen">
-        serra@internetz#
-        {typing ? (
-          <motion.h5
-            variants={sentence}
-            initial="hidden"
-            animate="visible"
-            fontFamily="Silkscreen"
-          >
-            {hello.map((char, index) => {
-              return (
-                <motion.span key={char + '-' + index} variants={letter}>
-                  {char}
-                </motion.span>
-              )
-            })}
-          </motion.h5>
-        ) : (
-          <motion.span
-            className="blinker"
-            animate={{ color: '#ffffff' }}
-            transition={{
-              delay: 0.5,
-              type: 'tween',
-              repeat: Infinity,
-              repeatType: 'reverse',
-              repeatDelay: 0.5,
-            }}
-          >
-            {' '}
-            █
-          </motion.span>
-        )}
-      </Typography>
-    </Box>
+    <Grid container>
+      <Grid item xs={12}>
+        <Box
+          onClick={sayHello}
+          sx={{
+            marginTop: '30vh',
+            marginX: 'auto',
+            bgcolor: 'white',
+            width: '100%',
+            height: '40vh',
+            fontFamily: 'Silkscreen',
+            color: '#ec407a',
+          }}
+        >
+          <Typography variant="h5" color="#ec407a">
+            serra@internetz#
+            {typing ? (
+              <motion.h5
+                variants={sentence}
+                initial="hidden"
+                animate="visible"
+                fontFamily="Silkscreen"
+              >
+                {hello.map((char, index) => {
+                  return (
+                    <motion.span key={char + '-' + index} variants={letter}>
+                      {char}
+                    </motion.span>
+                  )
+                })}
+              </motion.h5>
+            ) : (
+              <motion.span
+                className="blinker"
+                animate={{ color: '#ffffff' }}
+                transition={{
+                  delay: 0.5,
+                  type: 'tween',
+                  repeat: Infinity,
+                  repeatType: 'reverse',
+                  repeatDelay: 0.5,
+                }}
+              >
+                {' '}
+                █
+              </motion.span>
+            )}
+          </Typography>
+        </Box>
+      </Grid>
+    </Grid>
   )
 }
 
