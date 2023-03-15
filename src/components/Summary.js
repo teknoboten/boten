@@ -35,13 +35,13 @@ export default function Summary() {
           <Typography variant="h6">
             <p>
               I love building with React & Express, but I am always teaching
-              myself something new Lately that's been Typescript, NextJS and how
-              to Docker.
+              myself something new. Lately that's been Typescript, NextJS and
+              how to Docker.
             </p>
             <p>
-              My super powers include creative thinking, determination, and bug
-              hunting (technical / bitey). I am passionate about learning,
-              problem solving, iterative optimization, and snacks.
+              My super powers include creative thinking, determination, and
+              troubleshooting. I am passionate about learning, problem solving,
+              iterative optimization, and snacks.
             </p>
 
             <p>
