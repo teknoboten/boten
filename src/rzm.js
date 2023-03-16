@@ -7,19 +7,17 @@ const about = [
 const catchEmAll = {
   title: 'Catch Em All!',
   github: 'https://github.com/teknoboten/catch-em-all',
-  url: 'https://github.com/teknoboten/catch-em-all',
   description:
     'Simple responsive React front end and Express REST API. Added Docker containers for both server and client.',
-  tags: ['Express', 'Docker', 'Material UI', 'Styled Components', 'React']
+  tags: ['Express', 'Docker', 'Material UI', 'Styled Components', 'React'],
 }
-
 
 const squamishGreenlaw = {
   title: 'Squamishgreenlaw.ca',
   github: 'https://github.com/teknoboten/SquamishGreenlaw',
   url: 'https://www.squamishgreenlaw.ca/',
   description:
-    'Single page app built with “artisanal” HTML, CSS, Javascript, and a dash of Bootstrap. Probably not going to do that again. 🙅🏻‍♀️ Set up continuous deployment using Netlify / GitHub and used Stripe’s API for managing donations.',
+    'Single page app built with “artisanal” HTML, CSS, Javascript, and a dash of Bootstrap. Set up continuous deployment using Netlify / GitHub and used Stripe’s API for managing donations.',
   tags: ['HTML', 'CSS', 'Javascript', 'Bootstrap', 'Netlify', 'Github'],
 }
 
@@ -56,6 +54,11 @@ const lightHouseLabs = {
   year: 2022,
 }
 
+const ccna = {
+  program: 'Cisco Certified Network Analyst',
+  year: 2010,
+}
+
 const winnipegTech = {
   school: 'Winnipeg Technical College',
   program: 'Diploma of Network Administration',
@@ -90,7 +93,7 @@ const peer1 = {
   company: 'PEER 1 Hosting',
   position: 'Network Analyst',
   description: [
-    'Supported 24/7 operations of a global 0C-192 backbone network and the datacenters it connected. Showed me the joy of solving a technical mystery and the value of well defined processes. Used many network debugging tools such as MTR and tcpdump.',
+    'Supported 24/7 operations of a global 0C-192 backbone network and the datacenters it connected. Assisted colocation clients with network configuration. Showed me the joy of solving a technical mystery and the value of well defined processes. Used many network debugging tools such as MTR and tcpdump.',
   ],
   years: '2009 - 2012',
 }
@@ -99,13 +102,19 @@ const wardrop = {
   company: 'Wardrop Engineering',
   position: 'I.T. Specialist',
   description: [
-    'Managed daily I.T. for 60-100 on-site staff. Windows XP and a fleet of temperamental plotters taught me the grit I needed to “just figure it out”, and working with engineers who could design a bridge but not log into their laptop helped me develop empathy and patience.',
+    'Managed daily I.T. for 60-100 on-site staff. Windows XP and a fleet of temperamental plotters taught me the grit I needed to “just figure it out”, and working with engineers who could design a bridge but not log into their laptop helped me develop confidence, empathy and patience.',
   ],
-  years: '2009 - 2012',
+  years: '2006 - 2009',
 }
 
-const recentProjects = [catchEmAll, squamishGreenlaw, tripster, fetchDogs, decisionWizard]
-const education = [lightHouseLabs, winnipegTech, uOfW]
+const recentProjects = [
+  catchEmAll,
+  squamishGreenlaw,
+  tripster,
+  fetchDogs,
+  decisionWizard,
+]
+const education = [lightHouseLabs, ccna, winnipegTech, uOfW]
 const employment = [odns, peer1, wardrop]
 
 //writing
