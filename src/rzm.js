@@ -1,9 +1,3 @@
-const about = [
-  'Passionate about learning, problem solving and iterative optimization. My super powers include creative thinking, determination, bug hunting (technical / bitey), plus the ability to make a salad that (most) people actually want to eat.',
-  'My super powers include creative thinking, determination, bug hunting (technical / bitey), plus the ability to make a salad that (most) people actually want to eat.',
-  'Coworkers and clients have described me as patient, hard-working, clever and “pleasant to work with, as long as you don’t mind the literal LOL-ing coming from her desk”.',
-]
-
 const catchEmAll = {
   title: 'Catch Em All!',
   github: 'https://github.com/teknoboten/catch-em-all',
@@ -54,6 +48,12 @@ const lightHouseLabs = {
   year: 2022,
 }
 
+const bcit = {
+  school: 'British Columbia Institute of Technology',
+  program: 'Certificate in Linux Administration',
+  year: 2012,
+}
+
 const ccna = {
   program: 'Cisco Certified Network Analyst',
   year: 2010,
@@ -72,11 +72,11 @@ const uOfW = {
 }
 
 const skills = {
-  languages: 'Javascript, CSS, HTML, SQL, Ruby',
+  languages: 'Javascript, CSS, HTML, SQL',
   frameworks:
-    'NodeJS, NextJS, ReactJS, MaterialUI, Express, EJS, Bootstrap, framer-motion, SASS, jQuery, styled components',
+    'Next.js, React.js, MaterialUI, Express, EJS, Bootstrap, framer-motion, jQuery, styled components',
   toolbox:
-    'Git, Docker, DNS, Chai, Jest, Firebase, Netlify, Heroku, Mailgun, Mapbox, Postman, Postgres, MongoDB',
+    'Git, Docker, DNS, Firebase, Netlify, Heroku, Mailgun, Postgres, MongoDB, Shopify, Wordpress',
 }
 
 const odns = {
@@ -114,11 +114,11 @@ const recentProjects = [
   fetchDogs,
   decisionWizard,
 ]
-const education = [lightHouseLabs, ccna, winnipegTech, uOfW]
+const education = [lightHouseLabs, bcit, ccna, winnipegTech, uOfW]
 const employment = [odns, peer1, wardrop]
 
 //writing
 //support.opendns.com/hc/en-us/articles/227987647-EDNS-Client-Subnet-FAQ
 //https://umbrella.cisco.com/blog/a-love-letter-to-early-adopters
 
-export { about, recentProjects, education, skills, employment }
+export { recentProjects, education, skills, employment }

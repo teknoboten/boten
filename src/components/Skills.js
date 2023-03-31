@@ -44,7 +44,7 @@ export default function Skills() {
       </Grid>
 
       <Grid item lg={10} sx={{ padding: 2 }}>
-        <Typography variant="h5">Ops Toolbox:</Typography>
+        <Typography variant="h5">Toolbox:</Typography>
 
         <Typography variant="h6" paddingX={2}>
           {skills.toolbox}

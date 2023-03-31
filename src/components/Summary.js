@@ -35,13 +35,20 @@ export default function Summary() {
           <Typography variant="h6">
             <p>
               I love building with React & Express, but I am always teaching
-              myself something new. Lately that's been Typescript, NextJS and
-              how to Docker.
+              myself something new. Lately that's been Typescript, Next.js,
+              Docker and how to patch drywall.
             </p>
             <p>
               My super powers include creative thinking, determination, and
-              troubleshooting. I am passionate about learning, problem solving,
-              iterative optimization, and snacks.
+              reading the manual. 👩🏻‍💻 I am passionate about learning and I'm not
+              afraid of a challenge!
+            </p>
+
+            <p>
+              I have worked in high availability production environments and
+              supported both development and clients across various SAAS
+              platforms. I also have experience with agile development practices
+              and familiarity with current CI/CD and DevOps methodologies.{' '}
             </p>
 
             <p>
