@@ -72,7 +72,7 @@ const uOfW = {
 }
 
 const skills = {
-  languages: 'Javascript, CSS, HTML, SQL',
+  languages: 'Typescript, Javascript, GO, CSS, HTML, SQL',
   frameworks:
     'Next.js, React.js, MaterialUI, Express, EJS, Bootstrap, framer-motion, jQuery, styled components',
   toolbox:

@@ -13,7 +13,12 @@ export default function Footer() {
     >
       <Typography variant="h5" sx={{ fontWeight: '500' }}>
         Coded with {'<3'} and{' '}
-        <Link rel="noreferrer" target="_blank" href={'https://reactjs.org/'}>
+        <Link
+          rel="noreferrer"
+          target="_blank"
+          href={'https://reactjs.org/'}
+          sx={{ color: '#F585F2' }}
+        >
           ReactJS
         </Link>
       </Typography>
