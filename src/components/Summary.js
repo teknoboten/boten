@@ -2,6 +2,7 @@ import React from 'react'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 import Link from '@mui/material/Link'
+import Avatar from '@mui/material/Avatar'
 
 export default function Summary() {
   return (
@@ -16,10 +17,20 @@ export default function Summary() {
       }}
     >
       <Grid container>
-        <Typography variant="h1">Hi! My name is Serra.</Typography>
-        <Typography variant="h5" marginY={3}>
-          I'm a Full-stack developer living in the pacific northwest.
-        </Typography>
+        <Grid item variant="header" md={9} lg={10}>
+          <Typography variant="h1">Hi! My name is Serra.</Typography>
+          <Typography variant="h5" marginY={3}>
+            I'm a Full-stack developer living in the pacific northwest.
+          </Typography>
+        </Grid>
+
+        <Grid item md={3} lg={2}>
+          <Avatar
+            alt="serra boten"
+            src="emoji.png"
+            sx={{ width: 200, height: 200 }}
+          />
+        </Grid>
       </Grid>
 
       <Grid container paddingTop={4} paddingBottom={6} paddingX={4}>
@@ -35,13 +46,12 @@ export default function Summary() {
           <Typography variant="h6">
             <p>
               I love building with React & Express, but I am always teaching
-              myself something new. Lately that's been Typescript, Next.js,
-              Docker and how to patch drywall.
+              myself something new. Lately that's been Typescript, Go, Docker
+              and how to patch drywall.
             </p>
             <p>
               My super powers include creative thinking, determination, and
-              reading the manual. 👩🏻‍💻 I am passionate about learning and I'm not
-              afraid of a challenge!
+              reading the manual. 👩🏻‍💻
             </p>
 
             <p>
@@ -58,8 +68,6 @@ export default function Summary() {
                 href="https://www.linkedin.com/in/serraboten/details/recommendations/"
                 rel="noreferrer"
                 target="_blank"
-                // color="#ec407a"
-                // sx={{ textDecoration: 'none', fontWeight: '500' }}
               >
                 {' '}
                 “pleasant to work with, as long as you don’t mind the literal
@@ -68,16 +76,26 @@ export default function Summary() {
             </p>
 
             <p>
-              These days I prefer writing code to social media, so if you'd like
-              to chat, please{' '}
+              I built this 'live resume' in late 2022 so it's probably out of
+              date; You can find current work on{' '}
+              <Link
+                href="https://github.com/teknoboten"
+                rel="noreferrer"
+                target="_blank"
+              >
+                {' '}
+                Github{' '}
+              </Link>
+              or
               <Link
                 href="mailto:serra@boten.ca"
                 rel="noreferrer"
                 target="_blank"
               >
-                send me an email.
+                {' '}
+                send me an email
               </Link>{' '}
-              I'd love to hear from you!
+              if you'd like to chat. I'd love to hear from you! 💌
             </p>
           </Typography>
         </Grid>

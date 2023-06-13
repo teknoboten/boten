@@ -5,8 +5,8 @@ import { ThemeProvider } from '@mui/material/styles'
 import { GlobalThemeOverride } from './GlobalThemeOverride'
 import App from './App'
 import ErrorPage from './routes/Error'
-import Resume from './components/Resume'
 import './index.css'
+// import Resume from './components/Resume'
 
 const router = createBrowserRouter([
   {
@@ -14,10 +14,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
   },
-  {
-    path: 'resume',
-    element: <Resume />,
-  },
+  // {
+  //   path: 'resume',
+  //   element: <Resume />,
+  // },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

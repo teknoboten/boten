@@ -19,7 +19,6 @@ export default function Skills() {
         <Typography
           variant="h2"
           sx={{
-            color: 'white',
             opacity: '.2',
           }}
         >

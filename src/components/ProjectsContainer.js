@@ -20,7 +20,6 @@ export default function ProjectsContainer() {
         <Typography
           variant="h2"
           sx={{
-            color: 'white',
             fontFamily: 'Silkscreen',
             opacity: '.2',
           }}

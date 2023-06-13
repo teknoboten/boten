@@ -5,14 +5,14 @@ export const GlobalThemeOverride = createTheme({
     MuiLink: {
       styleOverrides: {
         root: {
-          color: '#F5DFFB',
+          color: '#4381B0',
           textDecoration: 'none',
           fontWeight: '500',
-          backgroundColor: 'rgba(209, 70, 205, 0.0)',
+          backgroundColor: 'rgba(53, 211, 235, 0.0)',
 
           '&:hover': {
             boxShadow: 9,
-            backgroundColor: 'rgba(209, 70, 205, 0.4)',
+            backgroundColor: 'rgba(53, 211, 235, 0.4)',
             transition: 'backgroundColor, 500ms',
           },
         },
@@ -23,8 +23,16 @@ export const GlobalThemeOverride = createTheme({
         {
           props: { variant: 'summary' },
           style: {
-            // border: '2px solid black',
             padding: '5%',
+          },
+        },
+        {
+          props: { variant: 'header' },
+          style: {
+            display: 'flex',
+            flexDirection: 'column',
+            // alignItems: 'space-between',
+            padding: 0,
           },
         },
       ],
@@ -35,12 +43,12 @@ export const GlobalThemeOverride = createTheme({
           fontFamily: 'Silkscreen',
           fontSize: '3.75rem',
           fontWeight: 350,
-          color: 'white',
+          color: '#35D3EB',
           opacity: '.7',
         },
         h2: {
           fontFamily: 'Silkscreen',
-          color: 'white',
+          color: '#35D3EB',
           opacity: '.2',
         },
         h5: {
@@ -62,9 +70,3 @@ export const GlobalThemeOverride = createTheme({
     },
   },
 })
-
-// MuiGrid: {
-//     defaultProps: {
-//       md: 1,
-//     },
-//   },
